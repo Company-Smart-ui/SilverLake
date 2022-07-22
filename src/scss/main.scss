@@ -2,16 +2,13 @@
   @use 'sass:math';
 
 
-  @import 'components/_var';   
-  @import 'components/header/header';
-  @import 'components/grid';
-  @import 'components/sections';
-  @import 'components/button';
-  @import 'components/card';
-  @import 'components/fonts';
+  @import 'components/_var';
+  @import 'components/header';
   @import 'components/footer';
-  @import 'components/popup'; 
-  @import 'components/list';   
+  @import 'components/bootstrap';
+  @import 'components/animate';
+  @import 'components/button';
+  @import 'components/hero';
 
 
 
@@ -20,4 +17,4 @@
  
 
 
-@import 'modules/modules.scss'
+@import 'modules/modules.scss';

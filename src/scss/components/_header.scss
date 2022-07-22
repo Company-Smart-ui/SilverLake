@@ -1,0 +1,205 @@
+$header-bgc: rgb(242, 250, 255);
+
+.header{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #fff;
+
+    z-index: 5;
+    max-width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 20px;
+    background-color: transparent;
+    transition: 0.3s;
+    @include xl{
+        padding-top: 50px;
+        font-size: 13px;
+    }
+    @include xxl{
+        font-size: 16px;
+    }
+    .container{
+        max-width: 1400px;
+    }
+    svg{
+        fill: white;
+        width: 25px;
+        margin-right: 5px;
+        margin-top: -10px;
+    }
+    .cls-2{
+        stroke: white;
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+        &:hover{
+            color: white;
+        }
+    }
+    &-logo {
+        width: 145px;
+        margin-left: auto;
+        .logo-white{
+            display: block;
+        }
+        .logo-blue{
+            display: none;
+        }
+        @include xl{
+            margin: 0 auto;
+        }
+        img {
+            object-fit: contain;
+            width: 100%;
+        }
+    }
+    &.scroll{
+        @include xl{
+            padding-top: 15px;
+            background: white;
+            .container{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            svg{
+                fill: $accentColor;
+            }
+            .cls-2{
+                stroke: $accentColor;
+            }
+            .header-logo{
+                margin: 0;
+                max-width: 85px;
+                .logo-white{
+                    display: none;
+                }
+                .logo-blue{
+                    display: block;
+                }
+            }
+            .wrap{
+                display: flex;
+                justify-content: space-between;
+            }
+            .nav{
+                display: block;
+                &-second{
+                    position: static;
+                }
+            }
+            a{
+                color: $accentColor;
+            }
+        }
+    }
+}
+.nav{
+    justify-content: center;
+    opacity: 0;
+    @include xl{
+        opacity: 1;
+    }
+    li{
+        margin: 0 10px;
+        transition: .3s;
+        &:hover{
+            border-bottom: 1px solid white;
+        }
+    }
+    &-second{
+        @include xl{
+            position: absolute;
+            top: -20px;
+            right: 20px;
+        }
+    }
+ }
+.close {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    max-width: 73px;
+    min-width: 33px;
+    width: 10vw;
+    height: 50px;
+    background-color: transparent;
+    border: 0;
+    &:hover {
+        opacity: 1;
+    }
+    span{
+        position: absolute;
+        height: 2px;
+        max-width: 73px;
+        min-width: 33px;
+        width: 10vw;
+        top: 0;
+        left: 0;
+        background-color: white;
+        transition: .3s;
+        &:before, &:after {
+            position: absolute;
+            left: 0;
+            content: ' ';
+            height: 2px;
+            max-width: 73px;
+            min-width: 33px;
+            width: 10vw;
+            background-color: white;
+            transition: .3s;
+            @include md{
+                height: 4px;
+            }
+        }
+        &:before {
+            top: 10px;
+            @include md{
+                top: 20px;
+            }
+        }
+        &:after {
+            top: 20px;
+            max-width: 35px;
+            min-width: 15px;
+            width: 10vw;
+            @include md{
+                top: 40px;
+            }
+        }
+        @include md{
+            height: 4px;
+        }
+    }
+    @include xl{
+        display: none;
+    }
+}
+
+.nav-open {
+    height: 100vh;
+    background: $accentColor;
+    .nav{
+        opacity: 1;
+    }
+    .close{
+        span{
+            top: 10px;
+            transform: rotate(45deg);
+            &:before {
+                top: 0px;
+            }
+            &:after {
+                top: 1px;
+                width: 33px;
+                transform: rotate(-90deg);
+            }
+        }
+    }
+}

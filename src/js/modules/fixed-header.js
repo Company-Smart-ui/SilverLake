@@ -1,15 +1,13 @@
-
- // Появление меню при прокрутке 
- function pagescroll(){ 
+ function pagescroll(){
     let pscroll = 0;
     window.addEventListener('scroll', function() { 
         if (pscroll<pageYOffset&pageYOffset>header.offsetHeight){
-                 header.style.transform="translateY(-100%)"; //прячем хедер при прокрутке вниз            
-         }else { 
-              header.style.transform="none"; //показываем хедер при прокрутке вверх        
-         }  
-     pscroll=pageYOffset;
-   });
-  }
-  
-   //Появление меню при прокрутке
+                 header.classList.add('scroll');
+        }
+        pscroll=pageYOffset;
+
+        if(pscroll < 5) {
+            header.classList.remove('scroll');
+        }
+    });
+}
