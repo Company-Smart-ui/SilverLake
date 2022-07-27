@@ -68,31 +68,34 @@
                         <h2>Lorem ipsum dolor sit</h2>
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt iusto maxime obcaecati officia sequi? Qui!</p>
-                    <a class="link" href="#">stay with us</a>
+                    <a class="link modified" href="#">stay with us</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="search bg-second pt-2 pb-5 color-accent">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col fst-italic">
-                <p>Stay with us</p>
+<!-- search -->
+<section class="search mb-5 mb-lg-0 pb-230 pb-lg-130 bg-second pt-3 color-accent">
+    <div class="container mw-1000">
+        <div class="row align-items-center text-center mb-5r">
+            <div class="fs-5 col fst-italic br-accent p-0 pt-3 pb-3">
+                <p class="mb-0">Stay with us</p>
             </div>
 
-            <div class="col">
-                <div class="mb-3 d-flex align-items-center">
-                    <label class="form-check-label pe-3" for="date">Dates</label>
-                    <input type="date" class="form-control arrow-down" id="date" pattern="\d{4}-\d{2}-\d{2}">
+            <div class="col br-accent pt-3 pb-3 ps-4 pe-4">
+                <div class="d-flex align-items-center">
+                    <label class="form-check-label pe-3 fs-14" for="date">Dates</label>
+                    <input type="date" class="form-control arrow-down color-accent border-0 p-0" id="date" pattern="\d{4}-\d{2}-\d{2}">
                 </div>
             </div>
 
-            <div class="col">
-                <label>Guests</label>
-                <input type="text" name="guests" id="guests" class="guests arrow-down" placeholder="No. of guests" readonly="">
-                <div class="d-none guests bg-accent color-white p-4 text-center" style="">
+            <div class="col ps-4 pe-4">
+                <div class="d-flex align-items-center arrow-down">
+                    <label class="me-4 fs-14">Guests</label>
+                    <input type="text" name="guests" class="form-control border-0 color-accent" readonly="">
+                </div>
+                <div class="d-none guests bg-accent color-white p-4 text-center">
                     <div class="items">
                         <label class="form-check-label pe-3" for="date">Adults (18+ years)</label>
                         <div class="">
@@ -137,36 +140,247 @@
 
             <div class="col">
                 <div>
-                    <button class="button">search</button>
+                    <button class="button modified">search</button>
                 </div>
             </div>
         </div>
-        <div class="mw-700">
+        <div class="ps-3 mw-700 text-block">
             <div class="title">
                 <span>Welcome to Silverlake</span>
                 <h2>Enjoy some downtime</h2>
             </div>
-            <div class="fs-14 lh-2 color-second">
-                <p class="m-0">Our modern country estate in Dorset provides safe, secure and breathtaking holiday homes, based around a calm freshwater lake with sweeping views. </p>
-                <p class="m-0">It’s serenely set in the heart of Thomas Hardy’s Wessex, whilst barely a stone’s throw from the stirring Jurassic Coast, so you can enjoy some downtime from the crazy pace of urban life.
-                </p>
+            <div class="text">
+                <p>Our modern country estate in Dorset provides safe, secure and breathtaking holiday homes, based around a calm freshwater lake with sweeping views. </p>
+                <p>It’s serenely set in the heart of Thomas Hardy’s Wessex, whilst barely a stone’s throw from the stirring Jurassic Coast, so you can enjoy some downtime from the crazy pace of urban life.</p>
             </div>
         </div>
     </div>
 </section>
 
+<!-- blocks with pictures -->
+<section class="mb-5r">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-lg-7">
+                <picture class="d-block mb-5 mt-lg--60 mt--200">
+                    <img src="images/blocks/properties-like-no-other.jpg" alt="properties-like-no-other">
+                </picture>
+                <div class="signature mb-5">
+                    <p>Bringing people, ecology and award  winning architecture together</p>
+                    <picture>
+                        <img src="images/icons/butterfly.jpg" alt="butterfly">
+                    </picture>
+                </div>
+                <picture class="d-block mb-5 mr-xl--130">
+                    <img src="images/blocks/img-3.jpg" alt="img-3">
+                </picture>
+            </div>
+            <div class="col-lg-5">
+                <div class="mb-5 ps-3 p-lg-5 pe-0 text-block">
+                    <div class="title">
+                        <picture class="mb-3 d-block">
+                            <img src="images/icons/icon-sheet.jpg" alt="icon-sheet">
+                        </picture>
+                        <span>A SHORE INVESTMENT</span>
+                        <h2>Properties like no other</h2>
+                    </div>
+                    <div class="text">
+                        <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam assumenda labore molestias praesentium quos ratione reprehenderit similique voluptatum! Et facere libero minus molestias reiciendis voluptatum? Ex hic maxime velit.</p>
+                        <a class="link" href="#">find out more</a>
+                    </div>
+                </div>
+                <div class="block-bg-grey">
+                    <picture class="d-block">
+                        <img src="images/blocks/img-2.jpg" alt="img-2">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-<!--<section>-->
-<!--<div class="container">-->
+<!-- slider 1 HomepageSwiperInit -->
+<section class="mb-5">
+    <div class="container mw-1200">
+        <div class="row mb-5">
+            <div class="col-lg-7 pe-5 pe-xl-0 ps-5 ps-lg-0">
+                <div class="swiper-container HomepageSwiperInit mb-5 mw-700">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <picture>
+                                <img src="images/slider-1/slider-item-1.jpg" alt="slider-item-1">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <img src="images/slider-1/slider-item-2.jpg" alt="slider-item-2">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <img src="images/slider-1/slider-item-3.jpg" alt="slider-item-3">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <img src="images/slider-1/slider-item-4.png" alt="slider-item-4">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination hp-pagination-init"></div>
+                </div>
+            </div>
 
-<!--</div>-->
-<!--</section>-->
+            <div class="col-lg-5">
+                <div class="mb-5 ps-3 p-lg-0 pe-0 text-block">
+                    <div class="title">
+                        <picture class="mb-3 d-block">
+                            <img src="images/icons/dragonfly.jpg" alt="dragonfly">
+                        </picture>
+                        <span>STAY AND EXPERIENCE</span>
+                        <h2>Moments to treasure</h2>
+                    </div>
+                    <div class="text">
+                        <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam assumenda labore molestias praesentium quos ratione reprehenderit similique voluptatum! Et facere libero minus molestias reiciendis voluptatum? Ex hic maxime velit.</p>
+                        <a class="link" href="#">find out more</a>
+                    </div>
+                </div>
+                <div class="signature mb-5 pt-5">
+                    <p>Ready for adventure,<br> or time to chill</p>
+                    <picture>
+                        <img src="images/icons/butterfly.jpg" alt="butterfly">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-<!--<section>-->
-<!--    <div class="container">-->
+<!-- slider 2 HomepageSwiperFull -->
+<section>
+    <div class="conteiner">
+        <div class="mb-5 d-flex justify-content-center ps-3 text-block">
+            <div class="title">
+                <picture class="mb-3 d-block">
+                    <img src="images/icons/flower.jpg" alt="flower">
+                </picture>
+                <span>THE HURRICANE SPA</span>
+                <h2>Exclusively yours</h2>
+            </div>
+        </div>
+        <div class="swiper-container HomepageSwiperFull">
+            <div class="p-4 mw-700 bg-accent z-i-1 color-white text-center fst-italic fs-4 z-i-2 mb-lg--50">
+                <p class="m-0">Indulge in a tranquil sanctuary</p>
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <picture>
+                        <img src="images/slider-full/slider-full-item.jpg" alt="slider-full-item">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <img src="images/slider-full/slider-full-item.jpg" alt="slider-full-item">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <img src="images/slider-full/slider-full-item.jpg" alt="slider-full-item">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <img src="images/slider-full/slider-full-item.jpg" alt="slider-full-item">
+                    </picture>
+                </div>
+            </div>
+            <div class="swiper-pagination swiper-full-pagination-init"></div>
+            <div class="swiper-button-prev swiper-full-prev-init"></div>
+            <div class="swiper-button-next swiper-full-next-init"></div>
+        </div>
+        <div class="position-relative p-5r mw-700 bg-accent z-i-1 color-white mt-lg--15p mb-md-5">
+            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, accusamus aspernatur commodi consequatur dolorem ducimus inventore, iure laborum numquam officia perspiciatis quae quos rerum sapiente unde? Enim ipsa magni quaerat.</p>
+            <div>
+                <a class="link modified me-5" href="#">FIND OUT MORE</a>
+                <a class="link modified" href="#">BOOK A TREATMENT</a>
+            </div>
+        </div>
+    </div>
+</section>
 
-<!--    </div>-->
-<!--</section>-->
+<!-- slider 3 HomepageSwiperBlocks -->
+<section class="bg-second pt-5 pb-5 mb-5r">
+    <div class="container">
+        <div class="swiper-container HomepageSwiperBlocks color-accent">
+            <div class="mb-5r d-flex justify-content-center ps-3 text-block">
+                <div class="title">
+                    <picture class="mb-3 d-block">
+                        <img class="w-auto" src="images/icons/compass-symbol.jpg" alt="compass-symbol">
+                    </picture>
+                    <span>SILVERLAKE</span>
+                    <h2>Explore us a little further</h2>
+                </div>
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <picture class="mb-4 d-block">
+                        <img src="images/slider-blocks/slider-block-1.jpg" alt="slider-item">
+                    </picture>
+                    <h3 class="mb-3">The Estate</h3>
+                    <a class="link" href="#">FIND OUT MORE</a>
+                </div>
+
+                <div class="swiper-slide">
+                    <picture class="mb-4 d-block">
+                        <img src="images/slider-blocks/slider-block-2.jpg" alt="slider-item">
+                    </picture>
+                    <h3 class="mb-3">Sustainability</h3>
+                    <a class="link" href="#">FIND OUT MORE</a>
+                </div>
+
+                <div class="swiper-slide">
+                    <picture class="mb-4 d-block">
+                        <img src="images/slider-blocks/slider-block-3.jpg" alt="slider-item">
+                    </picture>
+                    <h3 class="mb-3">Silverlake News</h3>
+                    <a class="link" href="#">FIND OUT MORE</a>
+                </div>
+            </div>
+            <div class="swiper-button-prev swiper-blocks-prev"></div>
+            <div class="swiper-button-next swiper-blocks-next"></div>
+        </div>
+    </div>
+</section>
+
+<!-- instagram -->
+<section class="pt-5 pb-5 mb-5r">
+    <div class="container mw-1200 ps-xl-5 pe-xl-5">
+        <div class="mb-5 ps-3 text-block">
+            <div class="title">
+                <span>@sILVERLAKEDORSET</span>
+                <h2>Be part of the experience</h2>
+            </div>
+        </div>
+        <div class="row instagram">
+            <picture class="col">
+                <img src="images/instagram/inst-1.jpg" alt="inst">
+            </picture>
+            <picture class="col">
+                <img src="images/instagram/inst-2.jpg" alt="inst">
+            </picture>
+            <picture class="col">
+                <img src="images/instagram/inst-3.jpg" alt="inst">
+            </picture>
+            <picture class="col">
+                <img src="images/instagram/inst-4.jpg" alt="inst">
+            </picture>
+            <picture class="col">
+                <img src="images/instagram/inst-5.jpg" alt="inst">
+            </picture>
+        </div>
+    </div>
+</section>
+
  
 
 </main>

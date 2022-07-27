@@ -11,17 +11,26 @@ $main-button-hover:rgb(9, 65, 9);
   transition: .3s;
   text-transform: uppercase;
   cursor: pointer;
-  border: 1px solid $main-button;
 
+  border: 1px solid $main-button;
   color: $main-button;
   background-color: $accentColor;
-}
-  
-  .button:hover{
+  &.modified{
+    border: 1px solid $accentColor;
+    color: $accentColor;
+    background-color: transparent;
+    &:hover{
+      border: 1px solid $main-button;
+      color: $main-button;
+      background-color: $accentColor;
+    }
+  }
+  &:hover{
     color: $accentColor;
     background-color: $main-button;
   }
-  
+}
+
   
  
 

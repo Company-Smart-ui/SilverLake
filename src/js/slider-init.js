@@ -1,31 +1,62 @@
 var swiper = new Swiper(".HomepageSwiperInit", {
     slidesPerView: 1,
     spaceBetween: 10,
-    loop:true,
+    loop: true,
     grabCursor:'true',
+    autoplay: {
+        delay: 10000,
+        disableOnInteraction: false,
+    },
     pagination: {
-      el: "hp-pagination-init",
+      el: ".hp-pagination-init",
       clickable: true,
     },
-    navigation: {
-        nextEl: '.hp-next-init',
-        prevEl: '.hp-prev-init',
-      },
     breakpoints: {
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      768: {
-        slidesPerView:3,
-        spaceBetween: 40,
-      },
-      1024: {
-        grabCursor:false,
-        slidesPerView: 4, 
-        loop:false, 
-        allowTouchMove: false, //switch off on desktop
-
-      },
+        575: {
+            slidesPerView: 3,
+        },
+        1200: {
+            slidesPerView: 3,
+            grabCursor:false,
+        },
     },
   });
+var swiper = new Swiper(".HomepageSwiperFull", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+    grabCursor:'true',
+    autoplay: {
+        delay: 10000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-full-pagination-init",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-full-next-init',
+        prevEl: '.swiper-full-prev-init',
+    },
+});
+var swiper = new Swiper(".HomepageSwiperBlocks", {
+    slidesPerView: 2,
+    spaceBetween: 40,
+    loop: true,
+    grabCursor:'true',
+    autoplay: {
+        delay: 10000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: '.swiper-blocks-next',
+        prevEl: '.swiper-blocks-prev',
+    },
+    breakpoints: {
+        1200: {
+            spaceBetween: 70,
+            grabCursor:false,
+            slidesPerView: 3,
+        },
+    },
+});
