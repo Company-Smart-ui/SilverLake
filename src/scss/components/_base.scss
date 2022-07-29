@@ -35,7 +35,7 @@ body{
 html , body{
   margin: 0;
   padding: 0;
-  //font-family: 'Roboto', sans-serif;
+  font-family: 'Brandon', sans-serif !important;
 }
 
 * {
@@ -45,6 +45,11 @@ html , body{
 ul{
   list-style: none;
   padding: 0;
+}
+button{
+  border: 0;
+  background: transparent;
+  color: white;
 }
 a{
   text-decoration: none;
@@ -70,9 +75,7 @@ h2{
 input::-webkit-calendar-picker-indicator {
   opacity: 0;
 }
-.guests{
 
-}
 .arrow-down{
   position: relative;
   &::after{
@@ -99,6 +102,9 @@ input::-webkit-calendar-picker-indicator {
   &-second{
     background: $secondColor;
   }
+  &-transparent{
+    background: transparent;
+  }
 }
 .color{
   &-accent{
@@ -110,10 +116,18 @@ input::-webkit-calendar-picker-indicator {
   &-second{
     color: $secondFont !important;
   }
+  &-lg-accent{
+    @include lg{
+      color: $accentColor !important;
+    }
+  }
 }
 
 .br-accent{
   border-right: 1px solid $accentColor;
+}
+.bb-white{
+  border-bottom: 1px solid white;
 }
 
 .lh-2{
@@ -150,6 +164,7 @@ input::-webkit-calendar-picker-indicator {
   text-decoration: none;
   color: $accentColor;
   transition: .4s;
+  font-weight: 800;
   &::after{
     transition: .4s;
     position: relative;
@@ -183,6 +198,7 @@ input::-webkit-calendar-picker-indicator {
   margin-bottom: 30px;
   h2{
     font-size: 35px;
+    font-weight: 700;
   }
   span{
     text-transform: uppercase;
@@ -205,9 +221,18 @@ input::-webkit-calendar-picker-indicator {
   position: relative;
   z-index: 2;
 }
+.guests{
+  display: none;
+  position: absolute;
+  left: 8px;
+  width: 100%;
+}
 
 .fs-14{
   font-size: 14px;
+}
+.ff-acaslonpro-italic{
+  font-family: 'ACaslonPro-Italic', sans-serif !important;
 }
 
 .mw-700{
@@ -237,6 +262,11 @@ input::-webkit-calendar-picker-indicator {
 }
 .mb-5r{
   margin-bottom: 5rem !important;
+}
+.mb-lg-5r{
+  @include lg{
+    margin-bottom: 5rem !important;
+  }
 }
 .mt-lg--15p{
   @include lg{
@@ -307,6 +337,63 @@ input::-webkit-calendar-picker-indicator {
   }
 }
 
+.search{
+  background: $accentColor;
+  color: $secondColor;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 5;
+  @include lg{
+    position: static;
+    background: $secondColor;
+    color: $accentColor;
+  }
+  &.active{
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    display: block;
+    margin: 0;
+    .search-block{
+      display: block;
+      margin-bottom: 30px;
+    }
+    .btn-close{
+      display: block;
+      margin-left: auto;
+      margin-right: 20px;
+    }
+    .guests{
+      display: block;
+      width: 100%;
+    }
+  }
+  .btn-close{
+    display: none;
+  }
+  .btn-search{
+    @include lg{
+      border: 1px solid $accentColor;
+      color: $accentColor;
+      background-color: transparent;
+      &:hover{
+        border: 1px solid white;
+        color: white;
+        background-color: $accentColor;
+      }
+    }
+  }
+  .search-block{
+    display: none;
+    @include lg{
+      display: flex;
+    }
+  }
+}
 
 .text-block{
   font-size: 14px;
@@ -325,10 +412,14 @@ input::-webkit-calendar-picker-indicator {
 
 .signature{
   text-align: center;
-  font-style: italic;
+  font-family: 'ACaslonPro-Italic', sans-serif !important;
   color: $accentColor;
-  max-width: 300px;
+  max-width: 350px;
   margin: 0 auto;
+  font-size: 24px;
+  p{
+    margin-bottom: 10px;
+  }
   picture{
     display: block;
     margin: 0 auto;
@@ -365,4 +456,25 @@ input::-webkit-calendar-picker-indicator {
       bottom: -70px;
     }
   }
+}
+.block-with-img{
+  picture{
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.img-1{
+  max-width: 740px;
+  max-height: 710px;
+}
+.img-2{
+  max-width: 380px;
+  max-height: 470px;
+}
+.img-3{
+  max-width: 875px;
+  max-height: 395px;
 }

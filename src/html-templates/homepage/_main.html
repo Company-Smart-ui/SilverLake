@@ -1,72 +1,74 @@
 @@include("../_hero.html")
 
 <!-- search -->
-<section class="search mb-5 mb-lg-0 pb-230 pb-lg-130 bg-second pt-3 color-accent">
+<section class="mb-5 mb-lg-0 pb-230 pt-5 pt-lg-0 pb-lg-130 bg-second pt-lg-3">
     <div class="container mw-1000">
-        <div class="row align-items-center text-center mb-5r">
-            <div class="fs-5 col fst-italic br-accent p-0 pt-3 pb-3">
+        <div class="search pt-4 pb-4 pt-lg-0 pb-lg-0 row align-items-center text-center mb-lg-5r">
+            <button class="btn-close btn-close-white"><span></span></button>
+            <div class="fs-5 col ff-acaslonpro-italic br-accent p-0 pt-3 pb-3">
                 <p class="mb-0">Stay with us</p>
             </div>
 
-            <div class="col br-accent pt-3 pb-3 ps-4 pe-4">
-                <div class="d-flex align-items-center">
-                    <label class="form-check-label pe-3 fs-14" for="date">Dates</label>
-                    <input type="date" class="form-control arrow-down color-accent border-0 p-0" id="date" pattern="\d{4}-\d{2}-\d{2}">
+            <div class="col-lg-7 row align-items-center search-block">
+                <div class="col-lg-5 br-accent pt-3 pb-3 ps-4 pe-4">
+                    <div class="d-flex align-items-center">
+                        <label class="form-check-label pe-3 fs-14" for="date">Dates</label>
+                        <input type="date" class="form-control arrow-down color-lg-accent border-0 p-0" id="date" pattern="\d{4}-\d{2}-\d{2}">
+                    </div>
                 </div>
-            </div>
 
-            <div class="col ps-4 pe-4">
-                <div class="d-flex align-items-center arrow-down">
-                    <label class="me-4 fs-14">Guests</label>
-                    <input type="text" name="guests" class="form-control border-0 color-accent" readonly="">
-                </div>
-                <div class="d-none guests bg-accent color-white p-4 text-center">
-                    <div class="items">
-                        <label class="form-check-label pe-3" for="date">Adults (18+ years)</label>
-                        <div class="">
-                            <span class="" aria-role="button" id="decrement-adults">-</span>
-                            <span class="" aria-role="value" id="adults-value" class="adults-value">0</span>
-                            <span  class="" aria-role="button" id="increment-adults">+</span>
-                        </div>
+                <div class="col-lg-7 ps-4 pe-4 position-relative">
+                    <div class="d-flex align-items-center">
+                        <label class="me-2 fs-14">Guests</label>
+                        <span class="btn-guests form-control border-0 color-lg-accent bg-transparent arrow-down pe-4"></span>
                     </div>
-
-                    <div class="items">
-                        <label>Children (2-17 years)</label>
-                        <div class="">
-                            <span aria-role="button" aria-describedby="decrement number" id="decrement-children">-</span>
-                            <span aria-role="value" id="children-value">0</span>
-                            <span aria-role="button" aria-describedby="increment number" id="increment-children">+</span>
+                    <div class="guests bg-accent color-white p-4 text-center fs-14">
+                        <p>Please enter age at time of arrival</p>
+                        <div class="items mb-2 bb-white">
+                            <label class="form-check-label pe-3" for="date">Adults (18+ years)</label>
+                            <div class="d-flex align-items-center justify-content-center fs-3">
+                                <button class="" aria-role="button" id="decrement-adults">-</button>
+                                <span class="fw-bolder fs-2 ps-3 pe-3" aria-role="value" id="adults-value" class="adults-value">0</span>
+                                <button  class="" aria-role="button" id="increment-adults">+</button>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="items">
-                        <label>Infants (Under 2)</label>
-                        <div class="">
-                            <span aria-role="button" aria-describedby="decrement number" id="decrement-infants">-</span>
-                            <span aria-role="value" id="infants-value">0</span>
-                            <span aria-role="button" aria-describedby="increment number" id="increment-infants">+</span>
+                        <div class="items mb-2 bb-white">
+                            <label>Children (2-17 years)</label>
+                            <div class="d-flex align-items-center justify-content-center fs-3">
+                                <button aria-role="button" aria-describedby="decrement number" id="decrement-children">-</button>
+                                <span class="fw-bolder fs-2 ps-3 pe-3" aria-role="value" id="children-value">0</span>
+                                <button aria-role="button" aria-describedby="increment number" id="increment-children">+</button>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="items">
-                        <label>Pets</label>
-                        <div class="">
-                            <span aria-role="button" aria-describedby="decrement number" id="decrement-pets">-</span>
-                            <span aria-role="value" id="pets-value">0</span>
-                            <span aria-role="button" aria-describedby="increment number" id="increment-pets">+</span>
+                        <div class="items mb-2 bb-white">
+                            <label>Infants (Under 2)</label>
+                            <div class="d-flex align-items-center justify-content-center fs-3">
+                                <button aria-role="button" aria-describedby="decrement number" id="decrement-infants">-</button>
+                                <span class="fw-bolder fs-2 ps-3 pe-3" aria-role="value" id="infants-value">0</span>
+                                <button aria-role="button" aria-describedby="increment number" id="increment-infants">+</button>
+                            </div>
                         </div>
-                    </div>
 
-                    <div>
-                        <button class="button">done</button>
+                        <div class="items mb-2">
+                            <label>Pets</label>
+                            <div class="d-flex align-items-center justify-content-center fs-3">
+                                <button aria-role="button" aria-describedby="decrement number" id="decrement-pets">-</button>
+                                <span class="fw-bolder fs-2 ps-3 pe-3" aria-role="value" id="pets-value">0</span>
+                                <button aria-role="button" aria-describedby="increment number" id="increment-pets">+</button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <button class="button close-guests">done</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="col">
-                <div>
-                    <button class="button modified">search</button>
-                </div>
+                <button class="button btn-search">search</button>
             </div>
         </div>
         <div class="ps-3 mw-700 text-block">
@@ -83,11 +85,11 @@
 </section>
 
 <!-- blocks with pictures -->
-<section class="mb-5r">
+<section class="mb-5r block-with-img">
     <div class="container">
         <div class="row mb-5">
             <div class="col-lg-7">
-                <picture class="d-block mb-5 mt-lg--60 mt--200">
+                <picture class="d-block mb-5 mt-lg--60 mt--200 img-1">
                     <img src="images/blocks/properties-like-no-other.jpg" alt="properties-like-no-other">
                 </picture>
                 <div class="signature mb-5">
@@ -96,7 +98,7 @@
                         <img src="images/icons/butterfly.jpg" alt="butterfly">
                     </picture>
                 </div>
-                <picture class="d-block mb-5 mr-xl--130">
+                <picture class="d-block mb-5 mr-xl--130 img-3">
                     <img src="images/blocks/img-3.jpg" alt="img-3">
                 </picture>
             </div>
@@ -104,7 +106,7 @@
                 <div class="mb-5 ps-3 p-lg-5 pe-0 text-block">
                     <div class="title">
                         <picture class="mb-3 d-block">
-                            <img src="images/icons/icon-sheet.jpg" alt="icon-sheet">
+                            <img class="w-auto" src="images/icons/icon-sheet.jpg" alt="icon-sheet">
                         </picture>
                         <span>A SHORE INVESTMENT</span>
                         <h2>Properties like no other</h2>
@@ -115,7 +117,7 @@
                     </div>
                 </div>
                 <div class="block-bg-grey">
-                    <picture class="d-block">
+                    <picture class="d-block img-2">
                         <img src="images/blocks/img-2.jpg" alt="img-2">
                     </picture>
                 </div>
@@ -194,7 +196,7 @@
             </div>
         </div>
         <div class="swiper-container HomepageSwiperFull">
-            <div class="p-4 mw-700 bg-accent z-i-1 color-white text-center fst-italic fs-4 z-i-2 mb-lg--50">
+            <div class="p-4 mw-700 bg-accent z-i-1 color-white text-center ff-acaslonpro-italic fs-4 z-i-2 mb-lg--50">
                 <p class="m-0">Indulge in a tranquil sanctuary</p>
             </div>
             <div class="swiper-wrapper">

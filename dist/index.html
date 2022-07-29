@@ -76,72 +76,74 @@
 </section>
 
 <!-- search -->
-<section class="search mb-5 mb-lg-0 pb-230 pb-lg-130 bg-second pt-3 color-accent">
+<section class="mb-5 mb-lg-0 pb-230 pt-5 pt-lg-0 pb-lg-130 bg-second pt-lg-3">
     <div class="container mw-1000">
-        <div class="row align-items-center text-center mb-5r">
-            <div class="fs-5 col fst-italic br-accent p-0 pt-3 pb-3">
+        <div class="search pt-4 pb-4 pt-lg-0 pb-lg-0 row align-items-center text-center mb-lg-5r">
+            <button class="btn-close btn-close-white"><span></span></button>
+            <div class="fs-5 col ff-acaslonpro-italic br-accent p-0 pt-3 pb-3">
                 <p class="mb-0">Stay with us</p>
             </div>
 
-            <div class="col br-accent pt-3 pb-3 ps-4 pe-4">
-                <div class="d-flex align-items-center">
-                    <label class="form-check-label pe-3 fs-14" for="date">Dates</label>
-                    <input type="date" class="form-control arrow-down color-accent border-0 p-0" id="date" pattern="\d{4}-\d{2}-\d{2}">
+            <div class="col-lg-7 row align-items-center search-block">
+                <div class="col-lg-5 br-accent pt-3 pb-3 ps-4 pe-4">
+                    <div class="d-flex align-items-center">
+                        <label class="form-check-label pe-3 fs-14" for="date">Dates</label>
+                        <input type="date" class="form-control arrow-down color-lg-accent border-0 p-0" id="date" pattern="\d{4}-\d{2}-\d{2}">
+                    </div>
                 </div>
-            </div>
 
-            <div class="col ps-4 pe-4">
-                <div class="d-flex align-items-center arrow-down">
-                    <label class="me-4 fs-14">Guests</label>
-                    <input type="text" name="guests" class="form-control border-0 color-accent" readonly="">
-                </div>
-                <div class="d-none guests bg-accent color-white p-4 text-center">
-                    <div class="items">
-                        <label class="form-check-label pe-3" for="date">Adults (18+ years)</label>
-                        <div class="">
-                            <span class="" aria-role="button" id="decrement-adults">-</span>
-                            <span class="" aria-role="value" id="adults-value" class="adults-value">0</span>
-                            <span  class="" aria-role="button" id="increment-adults">+</span>
-                        </div>
+                <div class="col-lg-7 ps-4 pe-4 position-relative">
+                    <div class="d-flex align-items-center">
+                        <label class="me-2 fs-14">Guests</label>
+                        <span class="btn-guests form-control border-0 color-lg-accent bg-transparent arrow-down pe-4"></span>
                     </div>
-
-                    <div class="items">
-                        <label>Children (2-17 years)</label>
-                        <div class="">
-                            <span aria-role="button" aria-describedby="decrement number" id="decrement-children">-</span>
-                            <span aria-role="value" id="children-value">0</span>
-                            <span aria-role="button" aria-describedby="increment number" id="increment-children">+</span>
+                    <div class="guests bg-accent color-white p-4 text-center fs-14">
+                        <p>Please enter age at time of arrival</p>
+                        <div class="items mb-2 bb-white">
+                            <label class="form-check-label pe-3" for="date">Adults (18+ years)</label>
+                            <div class="d-flex align-items-center justify-content-center fs-3">
+                                <button class="" aria-role="button" id="decrement-adults">-</button>
+                                <span class="fw-bolder fs-2 ps-3 pe-3" aria-role="value" id="adults-value" class="adults-value">0</span>
+                                <button  class="" aria-role="button" id="increment-adults">+</button>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="items">
-                        <label>Infants (Under 2)</label>
-                        <div class="">
-                            <span aria-role="button" aria-describedby="decrement number" id="decrement-infants">-</span>
-                            <span aria-role="value" id="infants-value">0</span>
-                            <span aria-role="button" aria-describedby="increment number" id="increment-infants">+</span>
+                        <div class="items mb-2 bb-white">
+                            <label>Children (2-17 years)</label>
+                            <div class="d-flex align-items-center justify-content-center fs-3">
+                                <button aria-role="button" aria-describedby="decrement number" id="decrement-children">-</button>
+                                <span class="fw-bolder fs-2 ps-3 pe-3" aria-role="value" id="children-value">0</span>
+                                <button aria-role="button" aria-describedby="increment number" id="increment-children">+</button>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="items">
-                        <label>Pets</label>
-                        <div class="">
-                            <span aria-role="button" aria-describedby="decrement number" id="decrement-pets">-</span>
-                            <span aria-role="value" id="pets-value">0</span>
-                            <span aria-role="button" aria-describedby="increment number" id="increment-pets">+</span>
+                        <div class="items mb-2 bb-white">
+                            <label>Infants (Under 2)</label>
+                            <div class="d-flex align-items-center justify-content-center fs-3">
+                                <button aria-role="button" aria-describedby="decrement number" id="decrement-infants">-</button>
+                                <span class="fw-bolder fs-2 ps-3 pe-3" aria-role="value" id="infants-value">0</span>
+                                <button aria-role="button" aria-describedby="increment number" id="increment-infants">+</button>
+                            </div>
                         </div>
-                    </div>
 
-                    <div>
-                        <button class="button">done</button>
+                        <div class="items mb-2">
+                            <label>Pets</label>
+                            <div class="d-flex align-items-center justify-content-center fs-3">
+                                <button aria-role="button" aria-describedby="decrement number" id="decrement-pets">-</button>
+                                <span class="fw-bolder fs-2 ps-3 pe-3" aria-role="value" id="pets-value">0</span>
+                                <button aria-role="button" aria-describedby="increment number" id="increment-pets">+</button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <button class="button close-guests">done</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="col">
-                <div>
-                    <button class="button modified">search</button>
-                </div>
+                <button class="button btn-search">search</button>
             </div>
         </div>
         <div class="ps-3 mw-700 text-block">
@@ -158,11 +160,11 @@
 </section>
 
 <!-- blocks with pictures -->
-<section class="mb-5r">
+<section class="mb-5r block-with-img">
     <div class="container">
         <div class="row mb-5">
             <div class="col-lg-7">
-                <picture class="d-block mb-5 mt-lg--60 mt--200">
+                <picture class="d-block mb-5 mt-lg--60 mt--200 img-1">
                     <img src="images/blocks/properties-like-no-other.jpg" alt="properties-like-no-other">
                 </picture>
                 <div class="signature mb-5">
@@ -171,7 +173,7 @@
                         <img src="images/icons/butterfly.jpg" alt="butterfly">
                     </picture>
                 </div>
-                <picture class="d-block mb-5 mr-xl--130">
+                <picture class="d-block mb-5 mr-xl--130 img-3">
                     <img src="images/blocks/img-3.jpg" alt="img-3">
                 </picture>
             </div>
@@ -179,7 +181,7 @@
                 <div class="mb-5 ps-3 p-lg-5 pe-0 text-block">
                     <div class="title">
                         <picture class="mb-3 d-block">
-                            <img src="images/icons/icon-sheet.jpg" alt="icon-sheet">
+                            <img class="w-auto" src="images/icons/icon-sheet.jpg" alt="icon-sheet">
                         </picture>
                         <span>A SHORE INVESTMENT</span>
                         <h2>Properties like no other</h2>
@@ -190,7 +192,7 @@
                     </div>
                 </div>
                 <div class="block-bg-grey">
-                    <picture class="d-block">
+                    <picture class="d-block img-2">
                         <img src="images/blocks/img-2.jpg" alt="img-2">
                     </picture>
                 </div>
@@ -269,7 +271,7 @@
             </div>
         </div>
         <div class="swiper-container HomepageSwiperFull">
-            <div class="p-4 mw-700 bg-accent z-i-1 color-white text-center fst-italic fs-4 z-i-2 mb-lg--50">
+            <div class="p-4 mw-700 bg-accent z-i-1 color-white text-center ff-acaslonpro-italic fs-4 z-i-2 mb-lg--50">
                 <p class="m-0">Indulge in a tranquil sanctuary</p>
             </div>
             <div class="swiper-wrapper">
@@ -390,7 +392,7 @@
   <div class="wrap">
     <div class="d-lg-flex flex-lg-row-reverse justify-content-lg-between align-items-lg-end mb-5">
         <div class="d-flex align-items-center justify-content-center justify-content-lg-end mb-5 mb-lg-0">
-            <p class="m-0 me-4 fst-italic">Socialise with us</p>
+            <p class="m-0 me-4 ff-acaslonpro-italic fs-4">Socialise with us</p>
             <a class="me-3 zoomUp" href="#">
                 <svg width="30" height="30" viewBox="0 0 20 19" fill="none">
                     <path d="M10.0968 0C7.58167 0 7.26602 0.0109976 6.27817 0.0559518C5.29226 0.101099 4.61929 0.257184 4.03044 0.4862C3.42133 0.72274 2.90464 1.03916 2.38988 1.5541C1.87474 2.06886 1.55832 2.58554 1.321 3.19445C1.09141 3.78349 0.935126 4.45664 0.890751 5.44216C0.846568 6.43 0.834991 6.74583 0.834991 9.26095C0.834991 11.7761 0.846182 12.0908 0.890944 13.0786C0.936284 14.0645 1.09237 14.7375 1.3212 15.3263C1.55793 15.9354 1.87435 16.4521 2.3893 16.9668C2.90387 17.482 3.42056 17.7992 4.02928 18.0357C4.61852 18.2647 5.29168 18.4208 6.2774 18.466C7.26525 18.5109 7.5807 18.5219 10.0957 18.5219C12.611 18.5219 12.9257 18.5109 13.9135 18.466C14.8994 18.4208 15.5732 18.2647 16.1624 18.0357C16.7713 17.7992 17.2872 17.482 17.8018 16.9668C18.317 16.4521 18.6334 15.9354 18.8707 15.3265C19.0984 14.7375 19.2546 14.0643 19.3009 13.0788C19.3453 12.0909 19.3569 11.7761 19.3569 9.26095C19.3569 6.74583 19.3453 6.43019 19.3009 5.44235C19.2546 4.45645 19.0984 3.78349 18.8707 3.19464C18.6334 2.58554 18.317 2.06886 17.8018 1.5541C17.2867 1.03896 16.7715 0.722547 16.1618 0.4862C15.5714 0.257184 14.8981 0.101099 13.9122 0.0559518C12.9243 0.0109976 12.6098 0 10.0939 0H10.0968ZM9.26602 1.6689C9.5126 1.66852 9.78773 1.6689 10.0968 1.6689C12.5695 1.6689 12.8626 1.67778 13.8391 1.72215C14.742 1.76344 15.2321 1.91432 15.5585 2.04108C15.9907 2.20893 16.2988 2.40958 16.6228 2.73372C16.9469 3.05785 17.1476 3.36655 17.3158 3.79873C17.4426 4.12479 17.5936 4.61485 17.6347 5.51779C17.6791 6.49405 17.6888 6.78731 17.6888 9.25883C17.6888 11.7303 17.6791 12.0236 17.6347 12.9999C17.5934 13.9028 17.4426 14.3929 17.3158 14.7189C17.1479 15.1511 16.9469 15.4588 16.6228 15.7828C16.2986 16.1069 15.9909 16.3076 15.5585 16.4754C15.2325 16.6028 14.742 16.7533 13.8391 16.7945C12.8628 16.8389 12.5695 16.8486 10.0968 16.8486C7.62392 16.8486 7.33085 16.8389 6.35458 16.7945C5.45163 16.7529 4.96156 16.602 4.63492 16.4752C4.20273 16.3074 3.89403 16.1067 3.5699 15.7826C3.24576 15.4585 3.0451 15.1505 2.87686 14.7182C2.7501 14.3921 2.59903 13.902 2.55793 12.9991C2.51356 12.0228 2.50468 11.7296 2.50468 9.25652C2.50468 6.78346 2.51356 6.49174 2.55793 5.51548C2.59922 4.61253 2.7501 4.12248 2.87686 3.79603C3.04472 3.36385 3.24576 3.05515 3.5699 2.73102C3.89403 2.40688 4.20273 2.20623 4.63492 2.03799C4.96137 1.91065 5.45163 1.76016 6.35458 1.71868C7.20891 1.68009 7.53999 1.66852 9.26602 1.66659V1.6689ZM15.0403 3.20661C14.4267 3.20661 13.929 3.7038 13.929 4.31753C13.929 4.93107 14.4267 5.42885 15.0403 5.42885C15.6538 5.42885 16.1516 4.93107 16.1516 4.31753C16.1516 3.704 15.6538 3.20622 15.0403 3.20622V3.20661ZM10.0968 4.50507C7.47034 4.50507 5.34088 6.63451 5.34088 9.26095C5.34088 11.8874 7.47034 14.0159 10.0968 14.0159C12.7233 14.0159 14.852 11.8874 14.852 9.26095C14.852 6.63451 12.7231 4.50507 10.0966 4.50507H10.0968ZM10.0968 6.17397C11.8016 6.17397 13.1838 7.55597 13.1838 9.26095C13.1838 10.9657 11.8016 12.3479 10.0968 12.3479C8.39182 12.3479 7.0098 10.9657 7.0098 9.26095C7.0098 7.55597 8.39182 6.17397 10.0968 6.17397Z" fill="white"/>
