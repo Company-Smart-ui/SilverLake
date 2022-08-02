@@ -6,7 +6,7 @@
         }
         pscroll=pageYOffset;
 
-        if(pscroll < 5) {
+        if(pscroll < 10) {
             header.classList.remove('scroll');
         }
     });

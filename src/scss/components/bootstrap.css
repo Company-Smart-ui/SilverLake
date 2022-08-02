@@ -2242,7 +2242,7 @@ progress {
   cursor: pointer;
 }
 .form-control:focus {
-  color: #212529;
+  color: white;
   background-color: transparent;
   border-color: #86b7fe;
   outline: 0;
@@ -7371,6 +7371,10 @@ textarea.form-control-lg {
   bottom: 100% !important;
 }
 
+.start-auto{
+  left: auto !important;
+}
+
 .start-0 {
   left: 0 !important;
 }
@@ -7550,6 +7554,11 @@ textarea.form-control-lg {
 
 .w-auto {
   width: auto !important;
+}
+@media (min-width: 576px){
+  .w-sm-auto {
+    width: auto !important;
+  }
 }
 
 .mw-100 {
@@ -8000,6 +8009,9 @@ textarea.form-control-lg {
 
 .p-5 {
   padding: 3rem !important;
+}
+.p-5r{
+  padding: 5rem !important;
 }
 
 .px-0 {
@@ -9031,6 +9043,9 @@ textarea.form-control-lg {
 
   .p-sm-5 {
     padding: 3rem !important;
+  }
+  .p-sm-5r{
+    padding: 5rem !important;
   }
 
   .px-sm-0 {

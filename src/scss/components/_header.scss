@@ -16,7 +16,9 @@ $header-bgc: rgb(242, 250, 255);
     padding-top: 20px;
     background-color: transparent;
     transition: 0.3s;
+    height: 150px;
     @include xl{
+        height: auto;
         padding-top: 50px;
         font-size: 13px;
     }
@@ -94,6 +96,11 @@ $header-bgc: rgb(242, 250, 255);
                     position: static;
                 }
             }
+            li{
+                &:hover{
+                    border-bottom: 1px solid $accentColor;
+                }
+            }
             a{
                 color: $accentColor;
             }
@@ -107,10 +114,14 @@ $header-bgc: rgb(242, 250, 255);
         opacity: 1;
     }
     li{
-        margin: 0 10px;
+        margin: 0 10px 5px;
         transition: .3s;
+        border-bottom: 1px solid transparent;
         &:hover{
             border-bottom: 1px solid white;
+        }
+        @include md{
+            margin: 0 10px;
         }
     }
     &-second{
@@ -192,12 +203,15 @@ $header-bgc: rgb(242, 250, 255);
         span{
             top: 10px;
             transform: rotate(45deg);
+            width: 30px;
             &:before {
-                top: 0px;
+                top: 0;
+                width: 40px;
             }
             &:after {
                 top: 1px;
-                width: 33px;
+                width: 40px;
+                max-width: none;
                 transform: rotate(-90deg);
             }
         }

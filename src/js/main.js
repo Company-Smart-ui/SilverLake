@@ -51,7 +51,23 @@ function openGuests(){
         });
         closeGuests.addEventListener('click', function(){
             guests.style.display="none";
-            btnGuests.innerHTML = adults + " Adults" + ', ' + child + " Child" + ', ' + infants + " Infants" + ', ' + pets + " Pets";
+            var inputAdults = "";
+            var inputChild = "";
+            var inputInfants = "";
+            var inputPets = "";
+            if(adults > 0) {
+                inputAdults = adults + " Adults, ";
+            }
+            if(child > 0) {
+                inputChild = child + " Child, ";
+            }
+            if(infants > 0) {
+                inputInfants = infants + " Infants, ";
+            }
+            if(pets > 0) {
+                inputPets = pets + " Pets";
+            }
+            btnGuests.innerHTML = inputAdults + inputChild + inputInfants + inputPets;
         });
     }
 }

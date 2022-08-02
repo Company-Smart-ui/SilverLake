@@ -34,9 +34,19 @@ var swiper = new Swiper(".HomepageSwiperFull", {
         el: ".swiper-full-pagination-init",
         clickable: true,
     },
-    navigation: {
-        nextEl: '.swiper-full-next-init',
-        prevEl: '.swiper-full-prev-init',
+});
+var swiper = new Swiper(".OwnSwiperFull", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+    grabCursor:'true',
+    autoplay: {
+        delay: 10000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-full-pagination-init",
+        clickable: true,
     },
 });
 var swiper = new Swiper(".HomepageSwiperBlocks", {
