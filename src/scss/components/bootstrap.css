@@ -7370,6 +7370,9 @@ textarea.form-control-lg {
 .bottom-100 {
   bottom: 100% !important;
 }
+.bottom--100{
+  bottom: -100px !important;
+}
 
 .start-auto{
   left: auto !important;
@@ -7954,6 +7957,15 @@ textarea.form-control-lg {
 .mb-5 {
   margin-bottom: 3rem !important;
 }
+.mb-5r{
+  margin-bottom: 5rem !important;
+}
+.mb-10r{
+  margin-bottom: 10rem !important;
+}
+.mb-20r{
+  margin-bottom: 20rem !important;
+}
 
 .mb-auto {
   margin-bottom: auto !important;
@@ -7997,6 +8009,10 @@ textarea.form-control-lg {
 
 .p-2 {
   padding: 0.5rem !important;
+}
+
+.p-2r{
+  padding: 2rem !important;
 }
 
 .p-3 {
@@ -8988,6 +9004,15 @@ textarea.form-control-lg {
   .mb-sm-5 {
     margin-bottom: 3rem !important;
   }
+  .mb-sm-5r{
+    margin-bottom: 5rem !important;
+  }
+  .mb-sm-10r{
+    margin-bottom: 10rem !important;
+  }
+  .mb-sm-20r{
+    margin-bottom: 20rem !important;
+  }
 
   .mb-sm-auto {
     margin-bottom: auto !important;
@@ -9643,6 +9668,13 @@ textarea.form-control-lg {
     margin-bottom: 3rem !important;
   }
 
+  .mb-md-5r{
+    margin-bottom: 5rem !important;
+  }
+  .mb-md-10r{
+    margin-bottom: 10rem !important;
+  }
+
   .mb-md-auto {
     margin-bottom: auto !important;
   }
@@ -10293,6 +10325,12 @@ textarea.form-control-lg {
   .mb-lg-5 {
     margin-bottom: 3rem !important;
   }
+  .mb-lg-5r{
+    margin-bottom: 5rem !important;
+  }
+  .mb-lg-10r{
+    margin-bottom: 10rem !important;
+  }
 
   .mb-lg-auto {
     margin-bottom: auto !important;
@@ -10348,6 +10386,9 @@ textarea.form-control-lg {
 
   .p-lg-5 {
     padding: 3rem !important;
+  }
+  .p-lg-5r {
+    padding: 5rem !important;
   }
 
   .px-lg-0 {
@@ -10944,6 +10985,12 @@ textarea.form-control-lg {
   .mb-xl-5 {
     margin-bottom: 3rem !important;
   }
+  .mb-xl-5r{
+    margin-bottom: 5rem !important;
+  }
+  .mb-xl-10r{
+    margin-bottom: 10rem !important;
+  }
 
   .mb-xl-auto {
     margin-bottom: auto !important;
@@ -10999,6 +11046,9 @@ textarea.form-control-lg {
 
   .p-xl-5 {
     padding: 3rem !important;
+  }
+  .p-xl-5r {
+    padding: 5rem !important;
   }
 
   .px-xl-0 {

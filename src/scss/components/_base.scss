@@ -222,6 +222,12 @@ input::-webkit-calendar-picker-indicator {
   position: relative;
   z-index: 2;
 }
+.z-i-sm-2{
+  @include sm{
+    position: relative;
+    z-index: 2;
+  }
+}
 .guests{
   display: none;
   position: absolute;
@@ -274,8 +280,12 @@ input::-webkit-calendar-picker-indicator {
     padding-bottom: 130px !important;
   }
 }
-.mb-5r{
-  margin-bottom: 5rem !important;
+
+
+.mb-lg--100{
+  @include lg{
+    margin-bottom: -100px !important;
+  }
 }
 .mb-lg-5r{
   @include lg{
@@ -300,12 +310,22 @@ input::-webkit-calendar-picker-indicator {
     margin-bottom: -50px;
   }
 }
+.ml-lg--140{
+  @include lg{
+    margin-left: -140px;
+  }
+}
 .mr--130{
   margin-right: -130px;
 }
 .mr-xl--130{
   @include xl{
     margin-right: -130px;
+  }
+}
+.position-sm-relative{
+  @include sm{
+    position: relative !important;
   }
 }
 
@@ -477,6 +497,7 @@ input::-webkit-calendar-picker-indicator {
 .block-with-img{
   picture{
     overflow: hidden;
+    height: 100%;
     img{
       width: 100%;
       height: 100%;
@@ -494,4 +515,54 @@ input::-webkit-calendar-picker-indicator {
 .img-3{
   max-width: 875px;
   max-height: 395px;
+}
+.img-4{
+  max-width: 205px;
+  max-height: 250px;
+}
+.img-5{
+  max-width: 412px;
+  max-height: 485px;
+}
+.img-6{
+  max-width: 400px;
+  max-height: 265px;
+}
+.img-360x275{
+  max-width: 360px;
+  max-height: 275px;
+}
+
+
+.bg-full-mobile{
+  @media screen and(max-width: 991px) {
+    margin: 0;
+    &:after{
+      position: absolute;
+      content: "";
+      width: 300%;
+      height: 100%;
+      top: 0;
+      left: -100%;
+      right: -100%;
+      background: $accentColor;
+      z-index: -1;
+    }
+  }
+}
+.bg-full-mobile-second{
+  @media screen and(max-width: 991px) {
+    margin: 0;
+    &:after{
+      position: absolute;
+      content: "";
+      width: 300%;
+      height: 100%;
+      top: 0;
+      left: -100%;
+      right: -100%;
+      background: $secondColor;
+      z-index: -1;
+    }
+  }
 }
