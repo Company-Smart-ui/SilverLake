@@ -30,8 +30,8 @@ $header-bgc: rgb(242, 250, 255);
     }
     svg{
         fill: white;
-        width: 25px;
-        margin-right: 5px;
+        width: 20px;
+        margin-right: 10px;
         margin-top: -10px;
     }
     .cls-2{
@@ -45,8 +45,11 @@ $header-bgc: rgb(242, 250, 255);
         }
     }
     &-logo {
-        width: 145px;
+        width: 90px;
         margin-left: auto;
+        @include sm{
+            width: 145px;
+        }
         .logo-white{
             display: block;
         }

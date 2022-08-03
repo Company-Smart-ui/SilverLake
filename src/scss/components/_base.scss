@@ -201,6 +201,21 @@ input::-webkit-calendar-picker-indicator {
     font-size: 35px;
     font-weight: 700;
   }
+  .link{
+    text-transform: none;
+    border-bottom: 2px solid transparent;
+    &:hover{
+      border-bottom: 2px solid $accentColor;
+      &::after{
+        font-size: 35px;
+        line-height: 1;
+      }
+    }
+  }
+  a{
+    color: $accentColor;
+    text-decoration: none;
+  }
   span{
     text-transform: uppercase;
     font-size: 16px;
@@ -212,6 +227,14 @@ input::-webkit-calendar-picker-indicator {
   &.modified{
     color: white;
     border-left: 7px solid white;
+    a{
+      color: white;
+    }
+    .link{
+      &:hover{
+        border-color: white;
+      }
+    }
   }
 }
 .z-i-1{
@@ -231,6 +254,7 @@ input::-webkit-calendar-picker-indicator {
 .guests{
   display: none;
   position: absolute;
+  z-index: 5;
   left: 8px;
   width: 100%;
 }
@@ -564,5 +588,33 @@ input::-webkit-calendar-picker-indicator {
       background: $secondColor;
       z-index: -1;
     }
+  }
+}
+.silverlake, .press{
+  position: relative;
+  margin-right: 8px;
+  &:after{
+    position: relative;
+    content: "";
+    top: 0;
+    left: 0;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border: 1px solid $accentColor;
+    padding: 2px 5px;
+    @include md{
+      font-size: 12px;
+    }
+  }
+}
+.silverlake{
+  &:after{
+    content: "SILVERLAKE";
+  }
+}
+.press{
+  &:after{
+    content: "PRESS";
   }
 }

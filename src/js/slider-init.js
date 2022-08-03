@@ -50,8 +50,8 @@ var swiper = new Swiper(".OwnSwiperFull", {
     },
 });
 var swiper = new Swiper(".HomepageSwiperBlocks", {
-    slidesPerView: 2,
-    spaceBetween: 40,
+    slidesPerView: 1,
+    spaceBetween: 20,
     loop: true,
     grabCursor:'true',
     autoplay: {
@@ -63,6 +63,11 @@ var swiper = new Swiper(".HomepageSwiperBlocks", {
         prevEl: '.swiper-blocks-prev',
     },
     breakpoints: {
+        420: {
+            spaceBetween: 40,
+            grabCursor:false,
+            slidesPerView: 2,
+        },
         1200: {
             spaceBetween: 70,
             grabCursor:false,

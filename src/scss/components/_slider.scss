@@ -162,7 +162,18 @@
       width: 100%;
     }
   }
+  h3{
+    font-weight: 800;
+  }
   .swiper-slide{
     padding-bottom: 10px;
+    min-height: 100%;
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .link{
+    margin-top: auto;
   }
 }
