@@ -107,6 +107,7 @@
 }
 
 .HomepageSwiperFull, .OwnSwiperFull{
+  z-index: 2;
   .swiper-slide{
     img{
       height: 350px;
@@ -132,10 +133,7 @@
   .swiper-button-next, .swiper-button-prev{
     display: block;
     color: $accentColor;
-    top: 200px;
-    @media screen and (min-width: 400px){
-      top: 170px;
-    }
+    top: 150px;
     @include lg{
       top: 33%;
     }

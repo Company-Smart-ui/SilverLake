@@ -2217,7 +2217,7 @@ progress {
   width: 100%;
   padding: 0.375rem 0;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.5;
   letter-spacing: 1px;
   color: white;
@@ -2859,7 +2859,6 @@ textarea.form-control-lg {
 }
 .was-validated .form-control:valid:focus, .form-control.is-valid:focus {
   border-color: #198754;
-  box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
 }
 
 .was-validated textarea.form-control:valid, textarea.form-control.is-valid {
@@ -2878,7 +2877,6 @@ textarea.form-control-lg {
 }
 .was-validated .form-select:valid:focus, .form-select.is-valid:focus {
   border-color: #198754;
-  box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
 }
 
 .was-validated .form-control-color:valid, .form-control-color.is-valid {
@@ -2890,9 +2888,6 @@ textarea.form-control-lg {
 }
 .was-validated .form-check-input:valid:checked, .form-check-input.is-valid:checked {
   background-color: #198754;
-}
-.was-validated .form-check-input:valid:focus, .form-check-input.is-valid:focus {
-  box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
 }
 .was-validated .form-check-input:valid ~ .form-check-label, .form-check-input.is-valid ~ .form-check-label {
   color: #198754;
@@ -2915,6 +2910,7 @@ textarea.form-control-lg {
 
 .invalid-feedback {
   opacity: 0;
+  height: 0;
   width: 100%;
   position: relative;
   top: -30px;
@@ -2945,7 +2941,7 @@ textarea.form-control-lg {
 }
 
 .was-validated .form-control:invalid, .form-control.is-invalid {
-  border-color: #dc3545;
+  border-color: #dc3545 !important;
   padding-right: calc(1.5em + 0.75rem);
   /*background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");*/
   background-repeat: no-repeat;
@@ -7565,6 +7561,21 @@ textarea.form-control-lg {
 }
 @media (min-width: 576px){
   .w-sm-auto {
+    width: auto !important;
+  }
+}
+@media (min-width: 768px){
+  .w-md-auto {
+    width: auto !important;
+  }
+}
+@media (min-width: 991px){
+  .w-lg-auto {
+    width: auto !important;
+  }
+}
+@media (min-width: 1200px){
+  .w-xl-auto {
     width: auto !important;
   }
 }

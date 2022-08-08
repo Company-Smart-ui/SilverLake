@@ -169,6 +169,45 @@ var forms = document.getElementsByClassName('needs-validation');
     }
 })();
 
+(function() {
+    var btnSale = document.querySelector('.btn-sale');
+    var btnSold = document.querySelector('.btn-sold');
+    var blockSale = document.querySelector('.block-sale');
+    var blockSold = document.querySelector('.block-sold');
+    if(btnSale && btnSold){
+        btnSale.addEventListener('click', function(){
+            blockSale.style.order = "-1";
+            blockSold.style.order = "0";
+        });
+        btnSold.addEventListener('click', function(){
+            blockSold.style.order = "-1";
+            blockSale.style.order = "0";
+        });
+    }
+})();
+
+
+let elementsAnimate = document.querySelectorAll('.element-animation');
+(function(){
+    if(elementsAnimate){
+        function onEntry(entry) {
+            entry.forEach(change => {
+                if (change.isIntersecting) {
+                    change.target.classList.add('element-show');
+                }
+            });
+        }
+        let options = {
+            threshold: [0.5] };
+        let observer = new IntersectionObserver(onEntry, options);
+
+        for (let elm of elementsAnimate) {
+            observer.observe(elm);
+        }
+    }
+})();
+
+
 
  
       @@include('modules/nav.js') 

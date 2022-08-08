@@ -11,3 +11,34 @@
   }
 }
 
+
+.element-animation {
+  opacity: 0;
+
+  &.left-right{
+    transform: translateX(-20%);
+  }
+  &.right-left{
+    transform: translateX(20%);
+  }
+  &.to-top{
+    transform: translateY(20%);
+  }
+  &.to-down{
+    transform: translateY(-20%);
+  }
+  &.to-big{
+    transform: scale(.5);
+  }
+  &.to-small{
+    transform: scale(1.5);
+  }
+}
+
+.element-animation.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translate(0%);
+  transform: scale(1);
+}
+

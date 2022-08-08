@@ -6,7 +6,9 @@ class: "fixed"
 
 <link rel="stylesheet" href="css/swiper-bundle.css" class='swiper-delay_js' data-time="5111"></link>
 <main class="main">
-    <section class="bg-accent pt-10r pt-xl-5r mb-lg-5r">
+
+    <!--   hero section -->
+    <section class="bg-accent pt-10r pt-xl-5r mb-5 mb-md-0 mb-lg-5r">
         <div class="container">
             <div class="row align-items-lg-center flex-md-row-reverse">
                 <div class="col-md-6 col-xl-7">
@@ -21,13 +23,13 @@ class: "fixed"
                     </div>
                     <div class="signature mb-5 pt-3 color-white">
                         <p>Bringing people, ecology and award  winning architecture together</p>
-                        <picture>
+                        <picture class="">
                             <img src="images/icons/butterfly.png" alt="butterfly">
                         </picture>
                     </div>
                 </div>
                 <div class="col-md-6 col-xl-5">
-                    <picture class="d-block img-hero mb-lg--70 overflow-hidden">
+                    <picture class="d-block img-hero mb--50 mb-lg--70 overflow-hidden">
                         <img class="w-100 h-100" src="images/hero/hero-own-resales.jpg" alt="hero-own-resales">
                     </picture>
                 </div>
@@ -35,14 +37,15 @@ class: "fixed"
         </div>
     </section>
 
+    <!--   filter -->
     <section class="pt-5r">
         <div class="container">
             <div class="mb-5 ps-3 text-block">
                 <div class="title">
                     <span>property filter</span>
                     <div class="d-flex color-accent text-uppercase fw-bolder">
-                        <button class="border-accent p-1 pe-2 ps-2 me-2 bg-second text-uppercase">for sale</button>
-                        <button class="border-accent p-1 pe-2 ps-2 bg-second text-uppercase">sold</button>
+                        <button class="btn-sale border-accent p-1 pe-2 ps-2 me-2 bg-second text-uppercase">for sale</button>
+                        <button class="btn-sold border-accent p-1 pe-2 ps-2 bg-second text-uppercase">sold</button>
                     </div>
                 </div>
             </div>
@@ -50,85 +53,129 @@ class: "fixed"
         </div>
     </section>
 
-    <!--  for sale  -->
-    <section class="sale">
+    <!--  for sale / sold  -->
+    <section class="mb-5r">
+        <div class="container d-flex flex-column">
+
+            <div class="block-sale">
+                <div class="mb-5 ps-3 text-block d-flex justify-content-center">
+                    <div class="title">
+                        <picture class="mb-3 d-block">
+                            <img src="images/icons/icon-sheet.png" alt="sheet">
+                        </picture>
+                        <span>opportunity awaits</span>
+                        <h2>Properties for sale</h2>
+                    </div>
+                </div>
+
+                @@include('html-templates/modules/block-resale.html',{
+                class: "sale",
+                info: "for sale",
+                subTitle: "ELEGANT",
+                title: "Beaumont Village 27",
+                price: "975,00",
+                text: "An impressive and elegant south-facing residence situated in the heart of Beaumont Village, this property offers the perfect opportunity as a second home with the potential for attractive rental income.",
+                btnIcon: "",
+                })
+                @@include('html-templates/modules/block-resale.html',{
+                class: "sale",
+                info: "for sale",
+                subTitle: "ELEGANT",
+                title: "Beaumont Village 27",
+                price: "975,00",
+                text: "An impressive and elegant south-facing residence situated in the heart of Beaumont Village, this property offers the perfect opportunity as a second home with the potential for attractive rental income.",
+                btnIcon: "",
+                })
+
+                @@include('html-templates/modules/block-resale.html',{
+                class: "sale",
+                info: "for sale",
+                subTitle: "ELEGANT",
+                title: "Beaumont Village 27",
+                price: "975,00",
+                text: "An impressive and elegant south-facing residence situated in the heart of Beaumont Village, this property offers the perfect opportunity as a second home with the potential for attractive rental income.",
+                btnIcon: "",
+                })
+            </div>
+            <div class="block-sold">
+                <div class="mb-5 ps-3 text-block d-flex justify-content-center">
+                    <div class="title">
+                        <picture class="mb-3 d-block">
+                            <img src="images/icons/icon-sheet.png" alt="sheet">
+                        </picture>
+                        <span>a popular portfolio</span>
+                        <h2>Recently sold</h2>
+                    </div>
+                </div>
+
+                @@include('html-templates/modules/block-resale.html',{
+                class: "sold",
+                info: "sold",
+                subTitle: "ELEGANT",
+                title: "Beaumont Village 27",
+                price: "975,00",
+                text: "An impressive and elegant south-facing residence situated in the heart of Beaumont Village, this property offers the perfect opportunity as a second home with the potential for attractive rental income.",
+                btnIcon: '<a href="#" class="text-decoration-none btn-icon"><img src="images/icons/files.png" alt="files"><span class="bb-accent border-2">full details</span></a>',
+                })
+
+                @@include('html-templates/modules/block-resale.html',{
+                class: "sold",
+                info: "sold",
+                subTitle: "ELEGANT",
+                title: "Beaumont Village 27",
+                price: "975,00",
+                text: "An impressive and elegant south-facing residence situated in the heart of Beaumont Village, this property offers the perfect opportunity as a second home with the potential for attractive rental income.",
+                btnIcon: '<a href="#" class="text-decoration-none btn-icon"><img src="images/icons/files.png" alt="files"><span class="bb-accent border-2">full details</span></a>',
+                })
+
+                @@include('html-templates/modules/block-resale.html',{
+                class: "sold",
+                info: "sold",
+                subTitle: "ELEGANT",
+                title: "Beaumont Village 27",
+                price: "975,00",
+                text: "An impressive and elegant south-facing residence situated in the heart of Beaumont Village, this property offers the perfect opportunity as a second home with the potential for attractive rental income.",
+                btnIcon: '<a href="#" class="text-decoration-none btn-icon"><img src="images/icons/files.png" alt="files"><span class="bb-accent border-2">full details</span></a>',
+                })
+            </div>
+
+        </div>
+    </section>
+
+    <!--   form register -->
+    <section class="bg-second pt-5r pb-5r">
         <div class="container">
-
-            <div class="mb-5 ps-3 text-block d-flex justify-content-center">
-                <div class="title">
+            <div class="d-flex justify-content-center">
+                <div class="title mb-5">
                     <picture class="mb-3 d-block">
-                        <img src="images/icons/icon-sheet.png" alt="sheet">
+                        <img class="w-auto" src="images/icons/compass-symbol.png" alt="compass-symbol">
                     </picture>
-                    <span>opportunity awaits</span>
-                    <h2>Properties for sale</h2>
+                    <span>Be first to receive new resale information</span>
+                    <h2>Register with us now</h2>
                 </div>
             </div>
 
-            @@include('html-templates/modules/block-resale.html',{
-            class: "sale",
-            info: "for sale",
-            subTitle: "ELEGANT",
-            title: "Beaumont Village 27",
-            price: "975,00",
-            text: "An impressive and elegant south-facing residence situated in the heart of Beaumont Village, this property offers the perfect opportunity as a second home with the potential for attractive rental income.",
-            btnIcon: "",
-            })
-            @@include('html-templates/modules/block-resale.html',{
-            class: "sale",
-            info: "for sale",
-            subTitle: "ELEGANT",
-            title: "Beaumont Village 27",
-            price: "975,00",
-            text: "An impressive and elegant south-facing residence situated in the heart of Beaumont Village, this property offers the perfect opportunity as a second home with the potential for attractive rental income.",
-            btnIcon: "",
-            })
-            @@include('html-templates/modules/block-resale.html',{
-            class: "sale",
-            info: "for sale",
-            subTitle: "ELEGANT",
-            title: "Beaumont Village 27",
-            price: "975,00",
-            text: "An impressive and elegant south-facing residence situated in the heart of Beaumont Village, this property offers the perfect opportunity as a second home with the potential for attractive rental income.",
-            btnIcon: "",
-            })
-
-            <div class="mb-5 ps-3 text-block d-flex justify-content-center">
-                <div class="title">
-                    <picture class="mb-3 d-block">
-                        <img src="images/icons/icon-sheet.png" alt="sheet">
-                    </picture>
-                    <span>a popular portfolio</span>
-                    <h2>Recently sold</h2>
+            <form class="needs-validation row justify-content-between fw-bolder mw-1000 m-auto" novalidate>
+                <div class="col-lg-4 col-12 mb-3 mb-lg-0">
+                    <label for="userName" class="form-label"></label>
+                    <input type="text" class="form-control color-accent bb-accent" id="userName" placeholder="Name" required>
+                    <div class="invalid-feedback text-uppercase">
+                        Please enter your name error
+                    </div>
                 </div>
-            </div>
+                <div class="col-lg-4 col-12 mb-5 mb-lg-3 mb-lg-0">
+                    <label for="userEmailAddress" class="form-label"></label>
+                    <input type="email" class="form-control color-accent bb-accent" id="userEmailAddress" placeholder="Email Address" required>
+                    <div class="invalid-feedback text-uppercase bg-second h-auto">
+                        Please enter your address error
+                    </div>
+                </div>
 
-            @@include('html-templates/modules/block-resale.html',{
-            class: "sold",
-            info: "sold",
-            subTitle: "ELEGANT",
-            title: "Beaumont Village 27",
-            price: "975,00",
-            text: "An impressive and elegant south-facing residence situated in the heart of Beaumont Village, this property offers the perfect opportunity as a second home with the potential for attractive rental income.",
-            btnIcon: '<a href="#" class="text-decoration-none btn-icon"><img src="images/icons/files.png" alt="files"><span class="bb-accent border-2">full details</span></a>',
-            })
-            @@include('html-templates/modules/block-resale.html',{
-            class: "sold",
-            info: "sold",
-            subTitle: "ELEGANT",
-            title: "Beaumont Village 27",
-            price: "975,00",
-            text: "An impressive and elegant south-facing residence situated in the heart of Beaumont Village, this property offers the perfect opportunity as a second home with the potential for attractive rental income.",
-            btnIcon: '<a href="#" class="text-decoration-none btn-icon"><img src="images/icons/files.png" alt="files"><span class="bb-accent border-2">full details</span></a>',
-            })
-            @@include('html-templates/modules/block-resale.html',{
-            class: "sold",
-            info: "sold",
-            subTitle: "ELEGANT",
-            title: "Beaumont Village 27",
-            price: "975,00",
-            text: "An impressive and elegant south-facing residence situated in the heart of Beaumont Village, this property offers the perfect opportunity as a second home with the potential for attractive rental income.",
-            btnIcon: '<a href="#" class="text-decoration-none btn-icon"><img src="images/icons/files.png" alt="files"><span class="bb-accent border-2">full details</span></a>',
-            })
+                <div class="col-lg-4 col-12 d-flex align-items-lg-end">
+                    <button class="button m-auto modified fw-bolder pe-4 ps-4" type="submit">register now</button>
+                </div>
+            </form>
+
         </div>
     </section>
 
@@ -139,7 +186,7 @@ class: "fixed"
 })
 <div class="mb-5r pb-3"></div>
 
-<section class="bg-second pt-3 pb-3 position-fixed bottom-0 start-0 w-100 z-i-2 search-bottom">
+<section class="bg-second pt-3 pb-3 position-fixed bottom-0 start-0 w-100 z-i-5 search-bottom">
     <div class="mw-1200">
         @@include("./html-templates/modules/search.html")
     </div>
