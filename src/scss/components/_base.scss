@@ -682,6 +682,14 @@ input::-webkit-calendar-picker-indicator {
 .form-control:focus ~ .invalid-feedback{
   opacity: 0 !important;
 }
+.invalid-feedback{
+  @include xl{
+    font-size: 12px !important;
+  }
+  @include xxl{
+    font-size: 16px !important;
+  }
+}
 .SwiperResale{
   position: relative;
   .info{
