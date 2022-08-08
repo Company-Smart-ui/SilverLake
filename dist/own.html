@@ -464,24 +464,34 @@
             <h2>Stay in the loop</h2>
         </div>
     </div>
+    <form class="needs-validation row justify-content-between mb-5 fw-bolder" novalidate>
+            <div class="col-xl-3 col-sm-6 col-12 mb-3 mb-lg-0">
+                <label for="firstName" class="form-label"></label>
+                <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+                <div class="invalid-feedback text-uppercase">
+                    Please enter your name error
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 col-12 mb-3 mb-lg-0">
+                <label for="lastName" class="form-label"></label>
+                <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                <div class="invalid-feedback text-uppercase">
+                    Please enter your last name error
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 col-12 mb-3 mb-lg-0">
+                <label for="emailAddress" class="form-label"></label>
+                <input type="email" class="form-control" id="emailAddress" placeholder="Email Address" required>
+                <div class="invalid-feedback text-uppercase">
+                    Please enter your address error
+                </div>
+            </div>
 
-    <form class="row justify-content-between mb-5 fw-bolder" action="#">
-        <div class="col-lg-3 col-6 mb-3 mb-lg-0">
-            <label for="firstName" class="form-label"></label>
-            <input type="name" class="form-control" id="firstName" placeholder="First Name">
-        </div>
-        <div class="col-lg-3 col-6 mb-3 mb-lg-0">
-            <label for="lastName" class="form-label"></label>
-            <input type="name" class="form-control" id="lastName" placeholder="Last Name">
-        </div>
-        <div class="col-lg-3 col-6 mb-3 mb-lg-0">
-            <label for="emailAddress" class="form-label"></label>
-            <input type="email" class="form-control" id="emailAddress" placeholder="Email Address">
-        </div>
-        <div class="col-lg-2 col-6 d-flex align-items-lg-end">
+        <div class="col-xl-2 col-sm-6 col-12 d-flex align-items-lg-end">
             <button class="button m-auto" type="submit">Sign up</button>
         </div>
     </form>
+
     <div class="row justify-content-between align-items-end mb-4">
         <div class="col-lg-3 col-6 d-flex">
             <figure class="mb-3 col-6">

@@ -3,74 +3,10 @@
 <!-- search -->
 <section class="mb-5 mb-lg-0 pb-230 pt-5 pt-lg-0 pb-lg-130 bg-second pt-lg-3">
     <div class="container mw-1000">
-        <div class="search pt-4 pb-4 pt-lg-0 pb-lg-0 row align-items-center text-center mb-lg-5r">
-            <button class="btn-close btn-close-white"><span></span></button>
-            <div class="fs-5 col ff-acaslonpro-italic br-accent p-0 pt-3 pb-3">
-                <p class="mb-0">Stay with us</p>
-            </div>
-
-            <div class="col-lg-7 row align-items-center search-block">
-                <div class="col-lg-5 br-accent pt-3 pb-3 ps-4 pe-4">
-                    <div class="d-flex align-items-center">
-                        <label class="form-check-label pe-3 fs-14" for="date">Dates</label>
-                        <input type="date" class="form-control arrow-down color-lg-accent border-0 p-0" id="date" pattern="\d{4}-\d{2}-\d{2}">
-                    </div>
-                </div>
-
-                <div class="col-lg-7 ps-4 pe-4 position-relative">
-                    <div class="d-flex align-items-center">
-                        <label class="me-2 fs-14">Guests</label>
-                        <span class="btn-guests form-control border-0 color-lg-accent bg-transparent arrow-down pe-4"></span>
-                    </div>
-                    <div class="guests bg-accent color-white p-4 text-center fs-14">
-                        <p>Please enter age at time of arrival</p>
-                        <div class="items mb-2 bb-white">
-                            <label class="form-check-label pe-3" for="date">Adults (18+ years)</label>
-                            <div class="d-flex align-items-center justify-content-center fs-3">
-                                <button class="" aria-role="button" id="decrement-adults">-</button>
-                                <span class="fw-bolder fs-2 ps-3 pe-3" aria-role="value" id="adults-value" class="adults-value">0</span>
-                                <button  class="" aria-role="button" id="increment-adults">+</button>
-                            </div>
-                        </div>
-
-                        <div class="items mb-2 bb-white">
-                            <label>Children (2-17 years)</label>
-                            <div class="d-flex align-items-center justify-content-center fs-3">
-                                <button aria-role="button" aria-describedby="decrement number" id="decrement-children">-</button>
-                                <span class="fw-bolder fs-2 ps-3 pe-3" aria-role="value" id="children-value">0</span>
-                                <button aria-role="button" aria-describedby="increment number" id="increment-children">+</button>
-                            </div>
-                        </div>
-
-                        <div class="items mb-2 bb-white">
-                            <label>Infants (Under 2)</label>
-                            <div class="d-flex align-items-center justify-content-center fs-3">
-                                <button aria-role="button" aria-describedby="decrement number" id="decrement-infants">-</button>
-                                <span class="fw-bolder fs-2 ps-3 pe-3" aria-role="value" id="infants-value">0</span>
-                                <button aria-role="button" aria-describedby="increment number" id="increment-infants">+</button>
-                            </div>
-                        </div>
-
-                        <div class="items mb-2">
-                            <label>Pets</label>
-                            <div class="d-flex align-items-center justify-content-center fs-3">
-                                <button aria-role="button" aria-describedby="decrement number" id="decrement-pets">-</button>
-                                <span class="fw-bolder fs-2 ps-3 pe-3" aria-role="value" id="pets-value">0</span>
-                                <button aria-role="button" aria-describedby="increment number" id="increment-pets">+</button>
-                            </div>
-                        </div>
-
-                        <div>
-                            <button class="button close-guests">done</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <button class="button btn-search">search</button>
-            </div>
+        <div class="mb-lg-5r">
+            @@include("../modules/search.html")
         </div>
+
         <div class="ps-3 mw-700 text-block">
             <div class="title">
                 <span>Welcome to Silverlake</span>
@@ -85,7 +21,7 @@
 </section>
 
 <!-- blocks with pictures -->
-<section class="mb-5r block-with-img">
+<section class="mb-5r mb-lg-20r mb-xl-10r block-with-img">
     <div class="container">
         <div class="row mb-5">
             <div class="col-lg-7">
@@ -162,7 +98,7 @@
                 <div class="mb-5 ps-3 p-lg-0 pe-0 text-block">
                     <div class="title">
                         <picture class="mb-3 d-block">
-                            <img src="images/icons/dragonfly.jpg" alt="dragonfly">
+                            <img src="images/icons/dragonfly.png" alt="dragonfly">
                         </picture>
                         <span>STAY AND EXPERIENCE</span>
                         <h2>Moments to treasure</h2>

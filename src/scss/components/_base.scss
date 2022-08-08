@@ -442,6 +442,7 @@ input::-webkit-calendar-picker-indicator {
   color: $secondColor;
   position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
   z-index: 4;
   @include lg{
@@ -494,6 +495,12 @@ input::-webkit-calendar-picker-indicator {
     display: none;
     @include lg{
       display: flex;
+    }
+  }
+  .search-bottom{
+    .guests{
+      position: absolute;
+      bottom: 0;
     }
   }
 }
@@ -671,6 +678,9 @@ input::-webkit-calendar-picker-indicator {
   @include md{
     font-size: 20px;
   }
+}
+.form-control:focus ~ .invalid-feedback{
+  opacity: 0 !important;
 }
 .SwiperResale{
   position: relative;
