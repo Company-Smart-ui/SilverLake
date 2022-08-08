@@ -4,7 +4,10 @@
     transform: scale3d(1.3, 1.3, 1.3);
   }
 }
-.zoomUp:hover{
+.zoomUp{
   transition: .5s;
-  transform: scale(1.3);
+  &:hover{
+    transform: scale(1.3);
+  }
 }
+

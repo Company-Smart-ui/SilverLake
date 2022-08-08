@@ -8118,6 +8118,10 @@ textarea.form-control-lg {
   padding-top: 5rem !important;
 }
 
+.pt-10r {
+  padding-top: 10rem !important;
+}
+
 .pe-0 {
   padding-right: 0 !important;
 }
@@ -9167,6 +9171,9 @@ textarea.form-control-lg {
   .pt-sm-5r {
     padding-top: 5rem !important;
   }
+  .pt-sm-10r {
+    padding-top: 10rem !important;
+  }
 
   .pe-sm-0 {
     padding-right: 0 !important;
@@ -9832,6 +9839,9 @@ textarea.form-control-lg {
 
   .pt-md-5r {
     padding-top: 5rem !important;
+  }
+  .pt-md-10r {
+    padding-top: 10rem !important;
   }
 
   .pe-md-0 {
@@ -10501,6 +10511,9 @@ textarea.form-control-lg {
   .pt-lg-5r {
     padding-top: 5rem !important;
   }
+  .pt-lg-10r {
+    padding-top: 10rem !important;
+  }
 
   .pe-lg-0 {
     padding-right: 0 !important;
@@ -11167,6 +11180,9 @@ textarea.form-control-lg {
   }
   .pt-xl-5r {
     padding-top: 5rem !important;
+  }
+  .pt-xl-10r {
+    padding-top: 10rem !important;
   }
 
   .pe-xl-0 {

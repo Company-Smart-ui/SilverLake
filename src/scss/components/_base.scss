@@ -49,7 +49,11 @@ ul{
 button{
   border: 0;
   background: transparent;
-  color: white;
+  color: inherit;
+  font-weight: inherit;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
 }
 a{
   text-decoration: none;
@@ -74,6 +78,9 @@ h2{
 
 input::-webkit-calendar-picker-indicator {
   opacity: 0;
+}
+.border-accent{
+  border: 1px solid $accentColor;
 }
 
 .arrow-down{
@@ -129,6 +136,12 @@ input::-webkit-calendar-picker-indicator {
 .bb-white{
   border-bottom: 1px solid white;
 }
+.bb-accent{
+  border-bottom: 1px solid $accentColor;
+}
+.border-2{
+  border-width: 2px;
+}
 
 .lh-2{
   line-height: 2;
@@ -170,7 +183,7 @@ input::-webkit-calendar-picker-indicator {
     transition: .4s;
     position: relative;
     font-size: 0;
-    line-height: 16px;
+    line-height: 1;
     content: "\2192";
     opacity: 0;
   }
@@ -266,6 +279,10 @@ input::-webkit-calendar-picker-indicator {
   font-family: 'ACaslonPro-Italic', sans-serif !important;
 }
 
+.mw-150{
+  max-width: 150px !important;
+  margin: 0 auto;
+}
 .mw-500{
   max-width: 500px !important;
   margin: 0 auto;
@@ -304,12 +321,31 @@ input::-webkit-calendar-picker-indicator {
     padding-bottom: 130px !important;
   }
 }
-
-
+.m-mobile-auto{
+  @media screen and(max-width: 991px){
+    margin: auto;
+  }
+}
+.mb-lg--70{
+  @include lg{
+    margin-bottom: -70px !important;
+  }
+}
 .mb-lg--100{
   @include lg{
     margin-bottom: -100px !important;
   }
+}
+.mb-30{
+  margin-bottom: 30px;
+}
+.mb-lg--50{
+  @include lg{
+    margin-bottom: -50px;
+  }
+}
+.mb-60{
+  margin-bottom: 60px;
 }
 .mb-lg-5r{
   @include lg{
@@ -327,11 +363,6 @@ input::-webkit-calendar-picker-indicator {
 .mt-lg--60{
   @include lg{
     margin-top: -60px;
-  }
-}
-.mb-lg--50{
-  @include lg{
-    margin-bottom: -50px;
   }
 }
 .ml-lg--140{
@@ -394,14 +425,25 @@ input::-webkit-calendar-picker-indicator {
     width: 100%;
   }
 }
+.btn-icon{
+  color: $accentColor;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-right: 30px;
+  margin-bottom: 30px;
 
+  img{
+    max-height: 30px;
+    margin-right: 10px;
+  }
+}
 .search{
   background: $accentColor;
   color: $secondColor;
   position: fixed;
   bottom: 0;
   width: 100%;
-  z-index: 5;
+  z-index: 4;
   @include lg{
     position: static;
     background: $secondColor;
@@ -521,12 +563,18 @@ input::-webkit-calendar-picker-indicator {
 .block-with-img{
   picture{
     overflow: hidden;
-    height: 100%;
+    @include lg{
+      height: 100%;
+    }
     img{
       width: 100%;
       height: 100%;
     }
   }
+}
+.img-hero{
+  max-width: 485px;
+  max-height: 485px;
 }
 .img-1{
   max-width: 740px;
@@ -616,5 +664,55 @@ input::-webkit-calendar-picker-indicator {
 .press{
   &:after{
     content: "PRESS";
+  }
+}
+
+.price{
+  @include md{
+    font-size: 20px;
+  }
+}
+.SwiperResale{
+  position: relative;
+  .info{
+    position: absolute;
+    z-index: 2;
+    content: "";
+    top: 20px;
+    left: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: $accentColor;
+    color: white;
+    padding: 5px 10px;
+    @include md{
+      font-size: 20px;
+    }
+  }
+}
+.sale{
+  border-bottom: 2px solid $accentColor;
+  &:last-of-type{
+    border-bottom: none;
+  }
+  .price{
+    color: $accentColor;
+  }
+}
+.sold{
+  border-bottom: 2px solid $accentColor;
+  &:last-of-type{
+    border-bottom: none;
+  }
+  .title{
+    border-left: 7px solid $soldColor;
+    color: $soldColor;
+  }
+  .price{
+    color: $soldColor;
+  }
+  .btn-enquire{
+    display: none;
   }
 }

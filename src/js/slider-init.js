@@ -75,3 +75,21 @@ var swiper = new Swiper(".HomepageSwiperBlocks", {
         },
     },
 });
+var swiper = new Swiper(".SwiperResale", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    grabCursor:'true',
+    autoplay: {
+        delay: 10000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+    },
+    navigation: {
+        nextEl: '.swiper-btn-next',
+        prevEl: '.swiper-btn-prev',
+    },
+});
