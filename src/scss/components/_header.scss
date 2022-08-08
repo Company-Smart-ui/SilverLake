@@ -16,8 +16,9 @@ $header-bgc: rgb(242, 250, 255);
     padding-top: 20px;
     background-color: transparent;
     transition: 0.3s;
-    height: 150px;
+    height: 100px;
     @include md{
+        height: 150px;
         font-size: 16px;
     }
     @include xl{
