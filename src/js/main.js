@@ -47,25 +47,37 @@ const decrementPets = document.querySelector("#decrement-pets");
 function openGuests(){
     if(guests && btnGuests) {
         btnGuests.addEventListener('click', function(){
-            guests.style.display="block";
+            guests.classList.toggle('d-block');
         });
         closeGuests.addEventListener('click', function(){
-            guests.style.display="none";
+            guests.classList.remove('d-block');
             var inputAdults = "";
             var inputChild = "";
             var inputInfants = "";
             var inputPets = "";
             if(adults > 0) {
-                inputAdults = adults + " Adults, ";
+                inputAdults = adults + " Adult, ";
+                if(adults > 1){
+                    inputAdults = adults + " Adults, ";
+                }
             }
             if(child > 0) {
                 inputChild = child + " Child, ";
+                if(child > 1){
+                    inputChild = child + " Children, ";
+                }
             }
             if(infants > 0) {
-                inputInfants = infants + " Infants, ";
+                inputInfants = infants + " Infant, ";
+                if(infants > 1){
+                    inputInfants = infants + " Infants, ";
+                }
             }
             if(pets > 0) {
-                inputPets = pets + " Pets";
+                inputPets = pets + " Pet";
+                if(pets > 1){
+                    inputPets = pets + " Pets";
+                }
             }
             btnGuests.innerHTML = inputAdults + inputChild + inputInfants + inputPets;
         });
@@ -206,6 +218,18 @@ let elementsAnimate = document.querySelectorAll('.element-animation');
         }
     }
 })();
+
+
+(function(){
+    const search = document.querySelector('.search');
+    const searchBottom = document.querySelector('.search-bottom');
+    const footer = document.querySelector('.footer');
+    if(search && !searchBottom){
+        footer.classList.add('mb-5r', 'mb-lg-0' );
+    }
+})();
+
+
 
 
 

@@ -7360,6 +7360,9 @@ textarea.form-control-lg {
   top: 100% !important;
 }
 
+.bottom-auto {
+  bottom: auto !important;
+}
 .bottom-0 {
   bottom: 0 !important;
 }
@@ -7371,8 +7374,16 @@ textarea.form-control-lg {
 .bottom-100 {
   bottom: 100% !important;
 }
+.bottom--60{
+  bottom: -60px !important;
+}
 .bottom--100{
   bottom: -100px !important;
+}
+@media screen and(min-width: 991px){
+  .bottom-lg--100{
+    bottom: -100px !important;
+  }
 }
 
 .start-auto{
@@ -7554,6 +7565,11 @@ textarea.form-control-lg {
 
 .w-100 {
   width: 100% !important;
+}
+@media (min-width: 991px){
+  .w-lg-100 {
+    width: 100% !important;
+  }
 }
 
 .w-auto {
@@ -11985,6 +12001,50 @@ textarea.form-control-lg {
 
   .fs-4 {
     font-size: 1.5rem !important;
+  }
+  .fs-lg-1 {
+    font-size: calc(1.375rem + 1.5vw) !important;
+  }
+
+  .fs-lg-2 {
+    font-size: calc(1.325rem + 0.9vw) !important;
+  }
+
+  .fs-lg-3 {
+    font-size: calc(1.3rem + 0.6vw) !important;
+  }
+  .fs-lg-4 {
+    font-size: calc(1.275rem + 0.3vw) !important;
+  }
+  .fs-lg-5 {
+    font-size: 1.25rem !important;
+  }
+
+  .fs-lg-6 {
+    font-size: 1rem !important;
+  }
+}
+@media screen and (min-width: 991px){
+  .fs-lg-1 {
+    font-size: calc(1.375rem + 1.5vw) !important;
+  }
+
+  .fs-lg-2 {
+    font-size: calc(1.325rem + 0.9vw) !important;
+  }
+
+  .fs-lg-3 {
+    font-size: calc(1.3rem + 0.6vw) !important;
+  }
+  .fs-lg-4 {
+    font-size: calc(1.275rem + 0.3vw) !important;
+  }
+  .fs-lg-5 {
+    font-size: 1.25rem !important;
+  }
+
+  .fs-lg-6 {
+    font-size: 1rem !important;
   }
 }
 @media print {

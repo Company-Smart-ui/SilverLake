@@ -217,15 +217,9 @@ input::-webkit-calendar-picker-indicator {
   color: $accentColor;
   margin-bottom: 30px;
   h2{
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 700;
-    @include md{
-      font-size: 30px;
-    }
-    @include lg{
-      font-size: 35px;
-    }
-    @include xl{
+    @include sm{
       font-size: 40px;
     }
   }
@@ -248,9 +242,12 @@ input::-webkit-calendar-picker-indicator {
     text-transform: uppercase;
     font-size: 16px;
     display: block;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 10px;
     letter-spacing: 2px;
+    @include lg{
+      font-weight: 700;
+    }
   }
   &.modified{
     color: white;
@@ -298,12 +295,22 @@ input::-webkit-calendar-picker-indicator {
 .fs-14{
   font-size: 14px;
 }
+.fs-18{
+  font-size: 18px !important;
+}
 .ff-acaslonpro-italic{
   font-family: 'ACaslonPro-Italic', sans-serif !important;
 }
 
 .mw-150{
   max-width: 150px !important;
+  margin: 0 auto;
+}
+.signature.mw-400{
+  max-width: 400px !important;
+}
+.mw-400{
+  max-width: 400px !important;
   margin: 0 auto;
 }
 .mw-500{
@@ -314,10 +321,19 @@ input::-webkit-calendar-picker-indicator {
   max-width: 600px !important;
   margin: 0 auto;
 }
-
 .mw-lg-600{
   @include lg{
     max-width: 600px !important;
+    margin: 0 auto;
+  }
+}
+.mw-650{
+  max-width: 650px !important;
+  margin: 0 auto;
+}
+.mw-lg-650{
+  @include lg{
+    max-width: 650px !important;
     margin: 0 auto;
   }
 }
@@ -325,6 +341,12 @@ input::-webkit-calendar-picker-indicator {
 .mw-700{
   max-width: 700px !important;
   margin: 0 auto;
+}
+.mw-lg-750{
+  @include lg{
+    max-width: 750px !important;
+    margin: 0 auto;
+  }
 }
 .mw-1000{
   max-width: 1000px !important;
@@ -351,6 +373,11 @@ input::-webkit-calendar-picker-indicator {
 }
 .mb--50{
   margin-bottom: -50px !important;
+}
+.mb-sm--50{
+  @include sm{
+    margin-bottom: -50px !important;
+  }
 }
 .mb-lg--70{
   @include lg{
@@ -384,6 +411,11 @@ input::-webkit-calendar-picker-indicator {
 .mt-lg--15p{
   @include lg{
     margin-top: -15% !important;
+  }
+}
+.mt-lg--18p{
+  @include lg{
+    margin-top: -18% !important;
   }
 }
 .mt--200{
@@ -501,7 +533,6 @@ input::-webkit-calendar-picker-indicator {
       margin-right: 20px;
     }
     .guests{
-      display: block;
       width: 100%;
     }
   }
@@ -529,8 +560,10 @@ input::-webkit-calendar-picker-indicator {
 }
 .search-bottom{
   .guests{
-    position: absolute;
-    bottom: 0;
+    @include lg{
+      position: absolute;
+      bottom: 0;
+    }
   }
 }
 

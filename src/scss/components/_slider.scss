@@ -23,6 +23,9 @@
 .HomepageSwiperInit{
   position: relative;
   padding-bottom: 50px;
+  @include sm{
+    height: 700px;
+  }
   @include xl{
     height: 700px;
   }
@@ -122,9 +125,23 @@
   .swiper-pagination-bullet{
     background: white;
   }
+}
+.HomepageSwiperFull{
   .swiper-full-pagination-init{
     @include lg{
       bottom: 35%;
+    }
+  }
+}
+.OwnSwiperFull{
+  .swiper-full-pagination-init{
+    bottom: 10px;
+    @include lg{
+      margin-top: -18%;
+      bottom: auto;
+    }
+    span{
+      margin: 0 4px;
     }
   }
 }
