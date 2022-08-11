@@ -229,6 +229,46 @@ let elementsAnimate = document.querySelectorAll('.element-animation');
     }
 })();
 
+function firterStories(){
+    const arrStories = Array.from(document.querySelectorAll('[data-story]'));
+    const arrBtn = Array.from(document.querySelectorAll('[data-btn]'));
+    if(arrStories && arrBtn){
+        arrBtn.forEach(item => {
+            item.addEventListener('click', function(){
+                if(item.dataset.btn === "all"){
+                    arrStories.forEach(e => {
+                        e.classList.remove('d-none', 'opacity-0', 'active');
+                    })
+                    arrBtn.forEach(q =>{
+                        q.classList.remove('bg-accent', 'color-white');
+                    })
+                }else
+                if(!item.classList.contains('bg-accent')){
+                    item.classList.add('bg-accent', 'color-white');
+                    arrStories.filter(elem => {
+                        if(!elem.classList.contains('active')){
+                            elem.classList.add('d-none', 'opacity-0');
+                        }
+                        if(item.dataset.btn === elem.dataset.story){
+                            elem.classList.remove('d-none', 'opacity-0');
+                            elem.classList.add('active');
+                        }
+                    })
+                }else{
+                    item.classList.remove('bg-accent', 'color-white');
+                    arrStories.filter(elem => {
+                        if(item.dataset.btn === elem.dataset.story){
+                            elem.classList.add('d-none', 'opacity-0');
+                            elem.classList.remove('active');
+                        }
+                    })
+                }
+            })
+        })
+    }
+}
+firterStories();
+
 
 
 

@@ -104,7 +104,7 @@ input::-webkit-calendar-picker-indicator {
 
 .bg {
   &-accent {
-    background: $accentColor;
+    background: $accentColor !important;
   }
   &-second{
     background: $secondColor;
@@ -292,6 +292,9 @@ input::-webkit-calendar-picker-indicator {
   width: 100%;
 }
 
+.fs-12{
+  font-size: 12px;
+}
 .fs-14{
   font-size: 14px;
 }
@@ -443,6 +446,10 @@ input::-webkit-calendar-picker-indicator {
   @include sm{
     position: relative !important;
   }
+}
+
+.transition-04{
+  transition: .4s;
 }
 
 
