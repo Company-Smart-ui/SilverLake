@@ -1,5 +1,5 @@
 @@include('html-templates/head.html',{
-title:'SilverLake | Own Resales',
+title:'SilverLake | Gallery',
 metadesc:'page with very interesting content',
 class: "fixed"
 })
@@ -8,34 +8,13 @@ class: "fixed"
 <main class="main">
 
     <!--   hero section -->
-    <section class="bg-accent pt-10r pt-xl-5r mb-5 mb-md-0 mb-lg-5r">
-        <div class="container">
-            <div class="row align-items-lg-center flex-md-row-reverse">
-                <div class="col-md-6 col-xl-7">
-                    <div class="ps-3 pe-0 text-block">
-                        <div class="title modified">
-                            <span>HGTV story gallery</span>
-                            <h2>Lights, camera, action...</h2>
-                        </div>
-                        <div class="text color-white">
-                            <p class="mb-3">We have so many stories to share with you, from life in the world-renowned Cotswolds at our Lower Mill Estate, to Silverlake Dorset, our coastal haven located on the Jurassic Coast. Our team is here to keep you in conversation with HFG bringing you snippets of content surrounding the family business, lifestyle, seasonal updates, ecology and of course our award-winning architectural property designs.</p>
-                        </div>
-                    </div>
-                    <div class="signature mb-5 pt-3 color-white">
-                        <p>Stories to share</p>
-                        <picture class="">
-                            <img src="images/icons/butterfly.png" alt="butterfly">
-                        </picture>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-5">
-                    <picture class="d-block img-hero mb--50 mb-lg--70 overflow-hidden">
-                        <img class="w-100 h-100" src="images/hero/hero-gallery.jpg" alt="hero-gallery">
-                    </picture>
-                </div>
-            </div>
-        </div>
-    </section>
+    @@include('html-templates/modules/_hero-second.html',{
+    subTitle: "HGTV story gallery",
+    title: "Lights, camera, action...",
+    srcImg: "hero-gallery",
+    text: "We have so many stories to share with you, from life in the world-renowned Cotswolds at our Lower Mill Estate, to Silverlake Dorset, our coastal haven located on the Jurassic Coast. Our team is here to keep you in conversation with HFG bringing you snippets of content surrounding the family business, lifestyle, seasonal updates, ecology and of course our award-winning architectural property designs.",
+    signature: "Stories to share",
+    })
 
     <!--   filter -->
     <section class="pt-5r mb-5r">

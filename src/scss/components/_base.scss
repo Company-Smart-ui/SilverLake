@@ -355,6 +355,16 @@ input::-webkit-calendar-picker-indicator {
   max-width: 1000px !important;
   margin: 0 auto;
 }
+.mw-1100{
+  max-width: 1100px !important;
+  margin: 0 auto;
+}
+.mw-xl-1100{
+  @include xl{
+    max-width: 1100px !important;
+    margin: 0 auto;
+  }
+}
 .mw-1200{
   max-width: 1200px !important;
   margin: 0 auto;
@@ -768,14 +778,6 @@ input::-webkit-calendar-picker-indicator {
 .form-control:focus ~ .invalid-feedback{
   opacity: 0 !important;
 }
-.invalid-feedback{
-  @include xl{
-    font-size: 12px !important;
-  }
-  @include xxl{
-    font-size: 16px !important;
-  }
-}
 .SwiperResale{
   position: relative;
   .info{
@@ -824,5 +826,11 @@ input::-webkit-calendar-picker-indicator {
   }
   .info{
     background: $soldColor;
+  }
+}
+#tabList{
+  button.active{
+    color: white !important;
+    background: $accentColor !important;
   }
 }

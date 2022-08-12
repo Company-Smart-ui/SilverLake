@@ -194,7 +194,6 @@
 
 
 // Own cards
-
 .SwiperResale{
   .swiper-wrapper{
     padding-bottom: 60px;
@@ -203,14 +202,12 @@
     img{
       height: 300px;
       width: 100%;
+      background: $secondColor;
+      min-width: 100%;
+      min-height: 100%;
+      display: block;
       @include md{
         max-width: 420px;
-      }
-    }
-    @include sm{
-      img{
-        max-height: 300px;
-        height: 100%;
       }
     }
   }

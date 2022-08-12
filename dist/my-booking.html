@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>SilverLake | Gallery</title>
+  <title>SilverLake | My Booking</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"  content="page with very interesting content">
@@ -73,15 +73,15 @@
             <div class="col-md-6 col-xl-7">
                 <div class="ps-3 pe-0 text-block">
                     <div class="title modified">
-                        <span>HGTV story gallery</span>
-                        <h2>Lights, camera, action...</h2>
+                        <span>access your information</span>
+                        <h2>My booking</h2>
                     </div>
                     <div class="text color-white">
-                        <p class="mb-3">We have so many stories to share with you, from life in the world-renowned Cotswolds at our Lower Mill Estate, to Silverlake Dorset, our coastal haven located on the Jurassic Coast. Our team is here to keep you in conversation with HFG bringing you snippets of content surrounding the family business, lifestyle, seasonal updates, ecology and of course our award-winning architectural property designs.</p>
+                        <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                 </div>
                 <div class="signature mb-5 pt-3 color-white">
-                    <p>Stories to share</p>
+                    <p>Time with us awauts</p>
                     <picture class="">
                         <img src="images/icons/butterfly.png" alt="butterfly">
                     </picture>
@@ -89,111 +89,81 @@
             </div>
             <div class="col-md-6 col-xl-5">
                 <picture class="d-block img-hero mb--50 mb-lg--70 overflow-hidden">
-                    <img class="w-100 h-100" src="images/hero/hero-gallery.jpg" alt="hero-gallery">
+                    <img class="w-100 h-100" src="images/hero/hero-my-booking.jpg" alt="hero-my-booking">
                 </picture>
             </div>
         </div>
     </div>
 </section>
 
-    <!--   filter -->
+    <!--  tabs  -->
     <section class="pt-5r mb-5r">
         <div class="container">
-            <div class="ps-3 text-block">
+            <div class="mb-5r ps-3 text-block">
                 <div class="title">
-                    <span class="mb-0">hgtv stories</span>
-                    <div class="d-flex color-accent text-uppercase fw-bolder flex-wrap">
-                        <button class="border-accent p-1 pe-2 ps-2 me-2 mt-3 bg-second text-uppercase" data-btn="estate-films">estate films</button>
-                        <button class="border-accent p-1 pe-2 ps-2 me-2 mt-3 bg-second text-uppercase" data-btn="nature-cam-clips">nature cam clips</button>
-                        <button class="border-accent p-1 pe-2 ps-2 me-2 mt-3 bg-second text-uppercase" data-btn="3d-tours">3d tours</button>
-                        <button class="border-accent p-1 pe-2 ps-2 me-2 mt-3 bg-second text-uppercase" data-btn="360-panoramas">360 panoramas</button>
-                        <button class="border-accent p-1 pe-2 ps-2 me-2 mt-3 bg-second text-uppercase" data-btn="podcasts">podcasts</button>
-                        <button class="border-accent p-1 pe-2 ps-2 me-2 mt-3 bg-second text-uppercase" data-btn="storytelling-films">storytelling films</button>
-                        <button class="border-accent p-1 pe-2 ps-2 me-2 mt-3 bg-second text-uppercase" data-btn="all">all</button>
+                    <span class="mb-0">booking</span>
+                    <div class="d-flex color-accent text-uppercase fw-bolder flex-wrap" role="tablist" id="tabList">
+                        <button class="border-accent p-1 pe-2 ps-2 me-2 mt-3 bg-second text-uppercase active"
+                                data-bs-toggle="tab" data-bs-target="#balance" type="button" role="tab" aria-controls="balance" aria-selected="true">pay your balance</button>
+                        <button class="border-accent p-1 pe-2 ps-2 me-2 mt-3 bg-second text-uppercase"
+                                data-bs-toggle="tab" data-bs-target="#security-deposit" type="button" role="tab" aria-controls="security-deposit" aria-selected="false">pay your security deposit</button>
                     </div>
                 </div>
             </div>
 
+            <div class="tab-content ps-lg-3">
+                <div class="tab-pane active" id="balance" role="tabpanel">
+                    <div class="ps-3 pe-0 text-block">
+                        <div class="title">
+                            <span>your visit</span>
+                            <h2>Pay your balance</h2>
+                        </div>
+                        <div class="text mw-1000">
+                            <p class="mb-3">The security of your personal information including payment details are very important to us. All details submitted are held in a secure environment and cannot be viewed by anyone else. Please enter your booking details to display the payment screen.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="security-deposit" role="tabpanel">
+                    <div class="ps-3 pe-0 text-block">
+                        <div class="title">
+                            <span>your visit</span>
+                            <h2>Pay your security deposit</h2>
+                        </div>
+                        <div class="text mw-1000">
+                            <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi aperiam asperiores aut beatae culpa dignissimos et eveniet, illo magnam minima mollitia nihil obcaecati provident quaerat quod repellat sed sunt vel, vitae! Amet eius incidunt laborum maiores mollitia porro, quam voluptate? A aperiam beatae exercitationem labore? Aperiam deserunt doloremque natus!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!--  stories  -->
+    <!--   form find booking -->
     <section class="mb-5r">
-        <div class="container d-flex flex-column">
+        <div class="container">
+            <div class="mw-1100 bg-second p-5">
+                <h2 class="color-accent fw-semibold fs-1">Find your booking</h2>
 
-            <div class="row">
+                <form class="needs-validation row justify-content-between fw-bolder" novalidate>
+                    <div class="col-lg-4 col-12 mb-3 mb-lg-0">
+                        <label for="userName" class="form-label"></label>
+                        <input type="number" class="form-control color-accent bb-accent" id="userName" placeholder="reservation number" required>
+                        <div class="invalid-feedback text-uppercase bg-second h-auto">
+                            Please enter reservation number
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12 mb-5 mb-lg-0">
+                        <label for="userEmailAddress" class="form-label"></label>
+                        <input type="text" class="form-control color-accent bb-accent" id="userEmailAddress" placeholder="surname" required>
+                        <div class="invalid-feedback text-uppercase bg-second h-auto">
+                            Please enter your surname
+                        </div>
+                    </div>
 
-                <div class="col-lg-4 col-md-6 col-12 mb-5 transition-04" data-story="estate-films">
-    <div class="d-flex flex-column h-100">
-        <picture class="d-block mb-3">
-            <img class="w-100" src="images/gallery/img-1.jpg" alt="img-1">
-        </picture>
-        <div class="d-flex mb-3">
-            <span class="d-block bg-second border-accent text-uppercase color-accent fs-12 fw-semibold pe-1 ps-1">estate films</span>
-        </div>
-        <h3 class="fs-2 color-accent text-start fw-semibold">Nadine Collinson: <br> To the Stars</h3>
-        <div class="text-block color-gray">
-            <p>An impressive and elegant south-facing residence situated in the heart of Beaumont Village, this property offers the perfect opportunity as a second home with the potential for attractive rental income.</p>
-        </div>
-        <div class="mt-auto">
-            <a href="#" class="link">Watch</a>
-        </div>
-    </div>
-</div>
-
-                <div class="col-lg-4 col-md-6 col-12 mb-5 transition-04" data-story="nature-cam-clips">
-    <div class="d-flex flex-column h-100">
-        <picture class="d-block mb-3">
-            <img class="w-100" src="images/gallery/img-2.jpg" alt="img-2">
-        </picture>
-        <div class="d-flex mb-3">
-            <span class="d-block bg-second border-accent text-uppercase color-accent fs-12 fw-semibold pe-1 ps-1">nature cam clips</span>
-        </div>
-        <h3 class="fs-2 color-accent text-start fw-semibold">A taste of summer</h3>
-        <div class="text-block color-gray">
-            <p>An impressive and elegant south-facing residence situated in the heart of Beaumont Village, this property offers the perfect opportunity as a second home with the potential for attractive rental income.</p>
-        </div>
-        <div class="mt-auto">
-            <a href="#" class="link">Watch</a>
-        </div>
-    </div>
-</div>
-
-                <div class="col-lg-4 col-md-6 col-12 mb-5 transition-04" data-story="3d-tours">
-    <div class="d-flex flex-column h-100">
-        <picture class="d-block mb-3">
-            <img class="w-100" src="images/gallery/img-3.jpg" alt="img-3">
-        </picture>
-        <div class="d-flex mb-3">
-            <span class="d-block bg-second border-accent text-uppercase color-accent fs-12 fw-semibold pe-1 ps-1">3d tours</span>
-        </div>
-        <h3 class="fs-2 color-accent text-start fw-semibold">Embrace an eco-friendly staycation at Silverlake</h3>
-        <div class="text-block color-gray">
-            <p>An impressive and elegant south-facing residence situated in the heart of Beaumont Village, this property offers the perfect opportunity as a second home with the potential for attractive rental income.</p>
-        </div>
-        <div class="mt-auto">
-            <a href="#" class="link">Watch</a>
-        </div>
-    </div>
-</div>
-
-                <div class="col-lg-4 col-md-6 col-12 mb-5 transition-04" data-story="360-panoramas">
-    <div class="d-flex flex-column h-100">
-        <picture class="d-block mb-3">
-            <img class="w-100" src="images/gallery/img-1.jpg" alt="img-1">
-        </picture>
-        <div class="d-flex mb-3">
-            <span class="d-block bg-second border-accent text-uppercase color-accent fs-12 fw-semibold pe-1 ps-1">360 panoramas</span>
-        </div>
-        <h3 class="fs-2 color-accent text-start fw-semibold">Nadine Collinson: <br> To the Stars</h3>
-        <div class="text-block color-gray">
-            <p>An impressive and elegant south-facing residence situated in the heart of Beaumont Village, this property offers the perfect opportunity as a second home with the potential for attractive rental income.</p>
-        </div>
-        <div class="mt-auto">
-            <a href="#" class="link">Watch</a>
-        </div>
-    </div>
-</div>
+                    <div class="col-lg-4 col-12 d-flex align-items-lg-end">
+                        <button class="button m-auto modified fw-bolder pe-4 ps-4" type="submit">find my booking</button>
+                    </div>
+                </form>
 
             </div>
         </div>
@@ -380,6 +350,7 @@
 
 </div>
 
+<script src="js/bootstrap.js"></script>
 <script  src="js/main.js"> </script>
 </body>
 
