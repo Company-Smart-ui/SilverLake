@@ -298,6 +298,9 @@ input::-webkit-calendar-picker-indicator {
 .fs-14{
   font-size: 14px;
 }
+.fs-16{
+  font-size: 16px !important;
+}
 .fs-18{
   font-size: 18px !important;
 }
@@ -305,6 +308,9 @@ input::-webkit-calendar-picker-indicator {
   font-family: 'ACaslonPro-Italic', sans-serif !important;
 }
 
+.h-430{
+  height: 430px;
+}
 .mw-150{
   max-width: 150px !important;
   margin: 0 auto;
@@ -369,6 +375,10 @@ input::-webkit-calendar-picker-indicator {
   max-width: 1200px !important;
   margin: 0 auto;
 }
+.mw-1300{
+  max-width: 1300px !important;
+  margin: 0 auto;
+}
 
 .pb-230{
   padding-bottom: 230px !important;
@@ -417,6 +427,9 @@ input::-webkit-calendar-picker-indicator {
   @include lg{
     margin-bottom: 5rem !important;
   }
+}
+.mt--25p{
+  margin-top: -25%;
 }
 .mt--50{
   margin-top: -50px;
@@ -586,6 +599,9 @@ input::-webkit-calendar-picker-indicator {
 
 .text-block{
   font-size: 14px;
+  @include sm{
+    font-size: 16px;
+  }
   .text{
     padding-left: 1rem!important;
     color: #4b4b4e;

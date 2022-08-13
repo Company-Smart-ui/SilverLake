@@ -93,3 +93,35 @@ var swiper = new Swiper(".SwiperResale", {
         prevEl: '.swiper-btn-prev',
     },
 });
+
+// gallery Swiper
+var swiper = new Swiper(".gallerySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 15,
+    loop: true,
+    grabCursor:'true',
+    autoplay: {
+        delay: 10000,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        420: {
+            grabCursor:false,
+            slidesPerView: 2,
+        },
+        991: {
+            grabCursor:false,
+            spaceBetween: 30,
+            slidesPerView: 3,
+        },
+        1200: {
+            grabCursor:false,
+            spaceBetween: 40,
+            slidesPerView: 4,
+        },
+    },
+    navigation: {
+        nextEl: '.gallery-next-init',
+        prevEl: '.gallery-prev-init',
+    },
+});
