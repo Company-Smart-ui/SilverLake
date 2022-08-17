@@ -7551,6 +7551,9 @@ textarea.form-control-lg {
   --bs-border-opacity: 1;
 }
 
+.w-0 {
+  width: 0 !important;
+}
 .w-25 {
   width: 25% !important;
 }
@@ -7608,6 +7611,9 @@ textarea.form-control-lg {
   min-width: 100vw !important;
 }
 
+.h-0{
+  height: 0 !important;
+}
 .h-25 {
   height: 25% !important;
 }

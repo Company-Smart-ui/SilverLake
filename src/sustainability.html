@@ -1,0 +1,408 @@
+@@include('html-templates/head.html',{
+title:'SilverLake | Sustainability',
+metadesc:'page with very interesting content',
+class: ""
+})
+
+<link rel="stylesheet" href="css/swiper-bundle.css" class='swiper-delay_js' data-time="5111"></link>
+<main class="main">
+  <section class="hero" style="background-image: url(./images/hero/hero-sustainability.jpg)"></section>
+
+  <!-- search -->
+  <section class="pt-5 mb-5r mb-xl-10r pt-lg-3">
+    <div class="container mw-1000">
+      <div class="search bg-lg-white pt-3 pb-3 pt-lg-0 pb-lg-0 row align-items-center text-center mb-lg-5r m-0">
+        <button class="btn-close btn-close-white"><span></span></button>
+        <div class="fs-2 fs-lg-4 col ff-acaslonpro-italic br-accent p-0 pt-3 pb-3 fw-bolder">
+          <p class="mb-0">Stay with us</p>
+        </div>
+
+        <div class="col-lg-7 row align-items-center search-block">
+          <div class="col-lg-5 br-accent pt-3 pb-3 ps-4 pe-4">
+            <div class="d-flex align-items-center">
+              <label class="form-check-label pe-3" for="date">Dates</label>
+              <input type="date" class="form-control arrow-down color-lg-accent border-0 p-0" id="date" pattern="\d{4}-\d{2}-\d{2}">
+            </div>
+          </div>
+
+          <div class="col-lg-7 ps-4 pe-4 position-relative">
+            <div class="d-flex align-items-center">
+              <label class="me-2">Guests</label>
+              <span class="btn-guests form-control border-0 color-lg-accent bg-transparent arrow-down pe-4 fw-bolder fs-18"></span>
+            </div>
+            <div class="guests bg-accent color-white p-4 text-center">
+              <p>Please enter age at time of arrival</p>
+              <div class="items mb-2 bb-white">
+                <label class="form-check-label pe-3" for="date">Adults (18+ years)</label>
+                <div class="d-flex align-items-center justify-content-center fs-3">
+                  <button class="" aria-role="button" id="decrement-adults">-</button>
+                  <span class="fw-bolder fs-2 ps-3 pe-3" aria-role="value" id="adults-value" class="adults-value">0</span>
+                  <button  class="" aria-role="button" id="increment-adults">+</button>
+                </div>
+              </div>
+
+              <div class="items mb-2 bb-white">
+                <label>Children (2-17 years)</label>
+                <div class="d-flex align-items-center justify-content-center fs-3">
+                  <button aria-role="button" aria-describedby="decrement number" id="decrement-children">-</button>
+                  <span class="fw-bolder fs-2 ps-3 pe-3" aria-role="value" id="children-value">0</span>
+                  <button aria-role="button" aria-describedby="increment number" id="increment-children">+</button>
+                </div>
+              </div>
+
+              <div class="items mb-2 bb-white">
+                <label>Infants (Under 2)</label>
+                <div class="d-flex align-items-center justify-content-center fs-3">
+                  <button aria-role="button" aria-describedby="decrement number" id="decrement-infants">-</button>
+                  <span class="fw-bolder fs-2 ps-3 pe-3" aria-role="value" id="infants-value">0</span>
+                  <button aria-role="button" aria-describedby="increment number" id="increment-infants">+</button>
+                </div>
+              </div>
+
+              <div class="items mb-2">
+                <label>Pets</label>
+                <div class="d-flex align-items-center justify-content-center fs-3">
+                  <button aria-role="button" aria-describedby="decrement number" id="decrement-pets">-</button>
+                  <span class="fw-bolder fs-2 ps-3 pe-3" aria-role="value" id="pets-value">0</span>
+                  <button aria-role="button" aria-describedby="increment number" id="increment-pets">+</button>
+                </div>
+              </div>
+
+              <div>
+                <button class="button close-guests">done</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <button class="button btn-search">search</button>
+        </div>
+      </div>
+      <div class="ps-3 mw-700 text-block">
+        <div class="title">
+          <span>respecting and enhancing nature</span>
+          <h2>Sustainability</h2>
+        </div>
+        <div class="text">
+          <p class="mb-4">We strive to have a positive impact in everything we do, respecting nature and the wider community, as well as enhancing the health and wellbeing of families who invest in and enjoy our unique natural retreats. Habitat Zero is Habitat First Group’s commitment to deliver an environmentally-responsible, carbon neutral business by 2030.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- blocks with pictures 2 -->
+  <section class="mb-5r block-with-img">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-7">
+          <div class="mb-5 ps-3 p-lg-5 pe-0 text-block">
+            <div class="title">
+              <picture class="mb-3 d-block">
+                <img class="w-auto" src="images/icons/leaves.png" alt="leaves">
+              </picture>
+              <span>surrounded by natural beauty</span>
+              <h2>Our wildlife</h2>
+            </div>
+            <div class="text mw-500 ms-0">
+              <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <a class="link" href="#">find out more</a>
+            </div>
+          </div>
+          <picture class="d-block mb-5 mr-xl--130 img-3 element-animation left-right">
+            <img src="images/blocks/sustainability-img-2.jpg" alt="sustainability-img-2">
+          </picture>
+        </div>
+        <div class="col-lg-5">
+          <div class="block-bg-grey mb-5 mb-lg-10r">
+            <picture class="d-block img-2 element-animation right-left">
+              <img src="images/blocks/sustainability-img-1.jpg" alt="sustainability-img-1">
+            </picture>
+          </div>
+          <div class="signature me-lg-0 d-flex flex-column">
+            <p>Enjoying a natural habitat</p>
+            <picture>
+              <img src="images/icons/butterfly.png" alt="butterfly">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- slider 1 HomepageSwiperInit -->
+  <section class="mb-5">
+    <div class="container mw-1200">
+      <div class="row mb-5">
+        <div class="col-lg-7 pe-5 pe-xl-0 ps-5 ps-lg-0">
+          <div class="swiper-container HomepageSwiperInit mb-5 mw-700">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture>
+                  <img src="images/slider-1/slider-item-1.jpg" alt="slider-item-1">
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <img src="images/slider-1/slider-item-2.jpg" alt="slider-item-2">
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <img src="images/slider-1/slider-item-3.jpg" alt="slider-item-3">
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <img src="images/slider-1/slider-item-4.png" alt="slider-item-4">
+                </picture>
+              </div>
+            </div>
+            <div class="swiper-pagination hp-pagination-init"></div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="mb-5 ps-3 p-lg-0 pe-0 text-block">
+            <div class="title">
+              <picture class="mb-3 d-block">
+                <img src="images/icons/icon-sheet.png" alt="icon-sheet">
+              </picture>
+              <span>building with nature</span>
+              <h2>Eco-holiday homes</h2>
+            </div>
+            <div class="text">
+              <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <a class="link" href="#">find out more</a>
+            </div>
+          </div>
+          <div class="signature mb-5 pt-5">
+            <p>Respecting nature and creating <br> a positive impact</p>
+            <picture>
+              <img src="images/icons/butterfly.png" alt="butterfly">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- blocks with picture -->
+  <section class="mb-5r block-with-img">
+    <div class="container">
+      <div class="row mb-5 align-items-center flex-lg-row-reverse">
+        <div class="col-lg-6">
+          <div class="block-bg-grey-big mb-10r mb-lg-5r">
+            <picture class="me-5 ms-5 d-block img-630x485 element-animation right-left">
+              <img src="images/blocks/sustainability-img-3.jpg" alt="sustainability-img-3">
+            </picture>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="mb-5 ps-3 p-lg-5 pe-0 text-block">
+            <div class="title">
+              <picture class="mb-3 d-block">
+                <img class="w-auto" src="images/icons/biodegradable.png" alt="biodegradable">
+              </picture>
+              <span>eco-friendly</span>
+              <h2>Sustainable travel</h2>
+            </div>
+            <div class="text mw-500 ms-0">
+              <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <a class="link" href="#">find out more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- blocks with picture -->
+  <section class="mb-5r block-with-img">
+    <div class="container">
+      <div class="row mb-5 align-items-center">
+        <div class="col-lg-6">
+          <div class="block-bg-grey-big mb-10r mb-lg-5r">
+            <picture class="me-5 ms-5 d-block img-630x485 element-animation left-right">
+              <img src="images/blocks/sustainability-img-4.jpg" alt="sustainability-img-4">
+            </picture>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="mb-5 ps-3 p-lg-5 pe-0 text-block">
+            <div class="title">
+              <picture class="mb-3 d-block">
+                <img class="w-auto" src="images/icons/blueprint.png" alt="blueprint">
+              </picture>
+              <span>part of the community</span>
+              <h2>Local projects</h2>
+            </div>
+            <div class="text mw-500 ms-0">
+              <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <a class="link" href="#">find out more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- gallery Swiper -->
+  <section class="mb-5r mb-xl-10r">
+    <div class="container">
+      <div class="swiper-container gallerySwiper mb-5">
+        <div class="d-flex justify-content-center mb-5">
+          <div class="title">
+            <picture class="mb-3 d-block">
+              <img class="w-auto" src="images/icons/series.png" alt="series">
+            </picture>
+            <span>habitat group tv</span>
+            <h2>HGTV - Living with nature</h2>
+          </div>
+        </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a data-fslightbox="gallery" href="images/swiper-gallery/swiper-gallery-item-1.jpg">
+              <picture>
+                <img src="images/swiper-gallery/swiper-gallery-item-1.jpg" alt="swiper-gallery-item">
+              </picture>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a data-fslightbox="gallery" href="images/swiper-gallery/swiper-gallery-item-2.jpg">
+              <picture>
+                <img src="images/swiper-gallery/swiper-gallery-item-2.jpg" alt="swiper-gallery-item">
+              </picture>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a data-fslightbox="gallery" href="images/swiper-gallery/swiper-gallery-item-3.jpg">
+              <picture>
+                <img src="images/swiper-gallery/swiper-gallery-item-3.jpg" alt="swiper-gallery-item">
+              </picture>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a data-fslightbox="gallery" href="images/swiper-gallery/swiper-gallery-item-4.jpg">
+              <picture>
+                <img src="images/swiper-gallery/swiper-gallery-item-4.jpg" alt="swiper-gallery-item">
+              </picture>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a data-fslightbox="gallery" href="images/swiper-gallery/swiper-gallery-item-5.jpg">
+              <picture>
+                <img src="images/swiper-gallery/swiper-gallery-item-5.jpg" alt="swiper-gallery-item">
+              </picture>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a data-fslightbox="gallery" href="images/swiper-gallery/swiper-gallery-item-6.jpg">
+              <picture>
+                <img src="images/swiper-gallery/swiper-gallery-item-6.jpg" alt="swiper-gallery-item">
+              </picture>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-prev gallery-prev-init"></div>
+        <div class="swiper-button-next gallery-next-init"></div>
+      </div>
+      <div class="mw-700 color-gray">
+        <p class="mb-4">Our team will be providing you with exciting stories and updates across our eco-conscious, sustainably driven portfolio of estates. HFG was founded on the principle of creating holiday home communities that share a deep love for Mother Nature, it’s at the heart of everything we do whether it’s living with nature, building with nature or holidaying with nature.</p>
+        <div class="text-center">
+          <a href="#" class="link">see all footage</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  links faqs and contact  -->
+  <section class="bg-accent pt-5 pb-5 p-sm-5r">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mb-5r mb-lg-0">
+          <div class="ps-3 p-lg-0 pe-0 text-block">
+            <div class="title modified mb-0">
+              <span>FAQs</span>
+              <h2><a class="link" href="#">Ask us a question...</a></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="ps-3 p-lg-0 pe-0 text-block">
+            <div class="title modified mb-0">
+              <span>contact</span>
+              <h2><a class="link" href="#">Feel free to get in touch</a></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- slider 3 HomepageSwiperBlocks -->
+  <section class="bg-second pt-5r pb-5r">
+    <div class="container">
+      <div class="swiper-container HomepageSwiperBlocks color-accent">
+        <div class="mb-5r d-flex justify-content-center ps-3 text-block">
+          <div class="title">
+            <picture class="mb-3 d-block">
+              <img class="w-auto" src="images/icons/compass-symbol.png" alt="compass-symbol">
+            </picture>
+            <span>SILVERLAKE NEWS</span>
+            <h2>Inspired and informed</h2>
+          </div>
+        </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <picture class="mb-3 d-block">
+              <img src="images/slider-blocks/slider-block-4.png" alt="slider-item">
+            </picture>
+            <div class="d-flex mb-4">
+              <div class="silverlake"></div>
+              <div class="press"></div>
+            </div>
+            <h3 class="mb-3">Nadine Collinson:<br> To the Stars</h3>
+            <a class="link" href="#">READ MORE</a>
+          </div>
+
+          <div class="swiper-slide">
+            <picture class="mb-3 d-block">
+              <img src="images/slider-blocks/slider-block-5.png" alt="slider-item">
+            </picture>
+            <div class="d-flex mb-4">
+              <div class="silverlake"></div>
+            </div>
+            <h3 class="mb-3">A taste of summer</h3>
+            <a class="link" href="#">READ MORE</a>
+          </div>
+
+          <div class="swiper-slide">
+            <picture class="mb-3 d-block">
+              <img src="images/slider-blocks/slider-block-6.png" alt="slider-item">
+            </picture>
+            <div class="d-flex mb-4">
+              <div class="silverlake"></div>
+              <div class="press"></div>
+            </div>
+            <h3 class="mb-3">Embrace an eco-friendly staycation at Silverlake</h3>
+            <a class="link" href="#">READ MORE</a>
+          </div>
+        </div>
+        <div class="swiper-button-prev swiper-blocks-prev"></div>
+        <div class="swiper-button-next swiper-blocks-next"></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+@@include('./html-templates/footer.html',{
+})
+
+</div>
+<script src="/js/fslightbox.js"></script>
+<script  src="js/main.js"> </script>
+</body>
+
+</html>

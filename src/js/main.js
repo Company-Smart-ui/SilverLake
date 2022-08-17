@@ -148,6 +148,7 @@ function countPets() {
         });
     }
 }
+// Mobile Search
 function openMobileSearch(){
     const btnSearch = document.querySelector(".btn-search");
     const search = document.querySelector(".search");
@@ -181,6 +182,7 @@ var forms = document.getElementsByClassName('needs-validation');
     }
 })();
 
+// blocks Sale && Sold
 (function() {
     var btnSale = document.querySelector('.btn-sale');
     var btnSold = document.querySelector('.btn-sold');
@@ -198,7 +200,7 @@ var forms = document.getElementsByClassName('needs-validation');
     }
 })();
 
-
+// for element-animation
 let elementsAnimate = document.querySelectorAll('.element-animation');
 (function(){
     if(elementsAnimate){
@@ -219,7 +221,7 @@ let elementsAnimate = document.querySelectorAll('.element-animation');
     }
 })();
 
-
+// if search down
 (function(){
     const search = document.querySelector('.search');
     const searchBottom = document.querySelector('.search-bottom');
@@ -229,6 +231,7 @@ let elementsAnimate = document.querySelectorAll('.element-animation');
     }
 })();
 
+// firter Stories
 function firterStories(){
     const arrStories = Array.from(document.querySelectorAll('[data-story]'));
     const arrBtn = Array.from(document.querySelectorAll('[data-btn]'));
@@ -268,6 +271,55 @@ function firterStories(){
     }
 }
 firterStories();
+
+// firter Treatments
+function firterTreatments(){
+    const arrTreatments = Array.from(document.querySelectorAll('[data-block]'));
+    const arrBtn = Array.from(document.querySelectorAll('[data-button]'));
+    if(arrTreatments && arrBtn){
+        arrBtn.forEach(item => {
+            item.addEventListener('click', function(){
+                let otherBtn = arrBtn.filter(a => a !== item);
+                otherBtn.forEach(iBtn => {
+                    iBtn.classList.remove('bg-accent', 'color-white');
+                })
+                if(item.classList.contains('bg-accent')){
+                    item.classList.remove('bg-accent', 'color-white');
+                }else{
+                    item.classList.add('bg-accent', 'color-white');
+                }
+                arrTreatments.filter(elem => { if(elem.dataset.block === item.dataset.button){
+                    if(elem.classList.contains('active')){
+                        arrTreatments.forEach(e => e.classList.remove('d-none'));
+                        elem.classList.remove('active');
+                    } else{
+                        arrTreatments.forEach(e =>{
+                            e.classList.add('d-none');
+                            e.classList.remove('active');
+                        });
+                        elem.classList.remove('d-none');
+                        elem.classList.add('active');
+                    }}
+                })
+            })
+        })
+    }
+}
+firterTreatments();
+
+// open/close block spa treatments
+function spaTreatments(){
+    const btnClose = document.querySelectorAll('.btn-close-circle');
+    btnClose.forEach(item => item.addEventListener('click', function(){
+        item.classList.toggle('active');
+        const paren = item.closest('.treatment');
+        const child = paren.querySelector('.wrap-treatments');
+        child.classList.toggle('h-auto');
+    }))
+}
+spaTreatments();
+
+
 
 
 
