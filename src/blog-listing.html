@@ -1,0 +1,121 @@
+@@include('html-templates/head.html',{
+title:'SilverLake | Blog Listing',
+metadesc:'page with very interesting content',
+class: "fixed"
+})
+
+<link rel="stylesheet" href="css/swiper-bundle.css" class='swiper-delay_js' data-time="5111"></link>
+<main class="main">
+
+    <!--   hero section -->
+    <section class="bg-accent pt-10r pt-xl-5r mb-5 mb-md-0 mb-lg-5r">
+        <div class="container">
+            <div class="row flex-md-row-reverse">
+                <div class="col-md-6 col-xl-7">
+                    <div class="ps-3 pe-0 text-block">
+                        <div class="title modified">
+                            <div class="d-flex mb-4">
+                                <p class="border-white text-uppercase color-white fs-12 fw-semibold pe-2 ps-2 me-2 mb-0">SILVERLAKE</p>
+                                <p class="border-white text-uppercase color-white fs-12 fw-semibold pe-2 ps-2 me-2 mb-0">activities</p>
+                            </div>
+                            <time><span>07 may 2022</span></time>
+                            <h2>Places to see near Silverlake</h2>
+                        </div>
+                        <div class="text color-white">
+                            <p class="mb-3">At Silverlake there are a great range of activities on site to keep you busy, but if you fancy heading further afield, you will find plenty to do in Dorset. From coastal towns that are full of history, to cliff top walks and family fun, you’ll be spoilt for choice. Here are just a few ideas to inspire your days out while you are staying with us.</p>
+                            <div class="mt-4">
+                                <a href="#" class="link modified">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-5">
+                    <picture class="d-block img-hero mb--50 mb-lg--70 overflow-hidden">
+                        <img class="w-100 h-100" src="images/hero/hero-durdle-door.jpg" alt="hero-durdle-door">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--   filter -->
+    <section class="pt-5r mb-5r">
+        <div class="container">
+            <div class="ps-3 text-block">
+                <div class="title">
+                    <span class="mb-0">Filter your news</span>
+                    <div class="d-flex color-accent text-uppercase fw-bolder flex-wrap">
+                        <button class="border-accent p-1 pe-2 ps-2 me-2 mt-3 bg-second text-uppercase bg-hover-accent-05" data-button="silverlake">SILVERLAKE</button>
+                        <button class="border-accent p-1 pe-2 ps-2 me-2 mt-3 bg-second text-uppercase bg-hover-accent-05" data-button="press">PRESS</button>
+                        <button class="border-accent p-1 pe-2 ps-2 me-2 mt-3 bg-second text-uppercase bg-hover-accent-05" data-button="activities">ACTIVITIES</button>
+                        <button class="border-accent p-1 pe-2 ps-2 me-2 mt-3 bg-second text-uppercase bg-hover-accent-05" data-button="offers">OFFERS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  treatments  -->
+    <section class="mb-5r">
+        <div class="container d-flex flex-column">
+
+            <div class="row">
+                @@include('html-templates/modules/block-blog.html',{
+                att: "silverlake press",
+                span: '<span class="d-block bg-second border-accent text-uppercase color-accent fs-12 fw-semibold pe-1 ps-1 me-2">SILVERLAKE</span><span class="d-block bg-second border-accent text-uppercase color-accent fs-12 fw-semibold pe-1 ps-1 me-2">press</span>',
+                img: "blog-img-1",
+                title: "Nadine Collinson: <br> To the Stars",
+                })
+                @@include('html-templates/modules/block-blog.html',{
+                att: "silverlake",
+                span: '<span class="d-block bg-second border-accent text-uppercase color-accent fs-12 fw-semibold pe-1 ps-1 me-2">SILVERLAKE</span>',
+                img: "blog-img-2",
+                title: "A taste of summer",
+                })
+                @@include('html-templates/modules/block-blog.html',{
+                att: "silverlake press",
+                span: '<span class="d-block bg-second border-accent text-uppercase color-accent fs-12 fw-semibold pe-1 ps-1 me-2">SILVERLAKE</span><span class="d-block bg-second border-accent text-uppercase color-accent fs-12 fw-semibold pe-1 ps-1 me-2">press</span>',
+                img: "blog-img-3",
+                title: "Embrace an eco-friendly staycation at Silverlake",
+                })
+                @@include('html-templates/modules/block-blog.html',{
+                att: "press",
+                span: '<span class="d-block bg-second border-accent text-uppercase color-accent fs-12 fw-semibold pe-1 ps-1 me-2">press</span>',
+                img: "blog-img-1",
+                title: "Nadine Collinson: <br> To the Stars",
+                })
+                @@include('html-templates/modules/block-blog.html',{
+                att: "activities",
+                span: '<span class="d-block bg-second border-accent text-uppercase color-accent fs-12 fw-semibold pe-1 ps-1 me-2">activities</span>',
+                img: "blog-img-2",
+                title: "A taste of summer",
+                })
+                @@include('html-templates/modules/block-blog.html',{
+                att: "offers",
+                span: '<span class="d-block bg-second border-accent text-uppercase color-accent fs-12 fw-semibold pe-1 ps-1 me-2">offers</span>',
+                img: "blog-img-3",
+                title: "Embrace an eco-friendly staycation at Silverlake",
+                })
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+@@include('./html-templates/footer.html',{
+})
+<div class="mb-5r pb-3"></div>
+
+<section class="bg-second pt-3 pb-3 position-fixed bottom-0 start-0 w-100 z-i-5 search-bottom">
+    <div class="mw-1200">
+        @@include("./html-templates/modules/search.html")
+    </div>
+</section>
+
+</div>
+
+<script  src="js/main.js"> </script>
+</body>
+
+</html>

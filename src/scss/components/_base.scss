@@ -112,6 +112,13 @@ input::-webkit-calendar-picker-indicator {
   &-transparent{
     background: transparent;
   }
+  &-hover-accent-05{
+    transition: .4s;
+    &:hover{
+      background: rgba($accentColor, .5);
+      color: white;
+    }
+  }
 }
 .color{
   &-accent{
@@ -259,6 +266,17 @@ input::-webkit-calendar-picker-indicator {
       &:hover{
         border-color: white;
       }
+    }
+  }
+}
+.title-link{
+  .link{
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    text-transform: none;
+    padding-bottom: 0;
+    &:hover{
+      border-bottom: 2px solid #2e697f;
     }
   }
 }
@@ -533,17 +551,24 @@ input::-webkit-calendar-picker-indicator {
 .btn-close-circle{
   margin: 0 auto -20px;
   display: block;
-  width: 15px;
-  height: 15px;
-  padding: 20px;
+  width: 35px;
+  height: 35px;
   background-color: white;
   border-radius: 50%;
   border: 1px solid $accentColor;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url('../images/icons/down-arrow-accent.png');
+  transition: .4s;
+  background-image: url('../images/icons/icon-down-arrow-accent.png');
+  &:hover{
+    background-color: $accentColor;
+    background-image: url('../images/icons/down-arrow-white.png');
+  }
   &.active{
-    background-image: url('../images/icons/close-accent.png');
+    background-image: url('../images/icons/icon-close-accent.png');
+    &:hover{
+      background-image: url('../images/icons/close-white.png');
+    }
   }
 }
 

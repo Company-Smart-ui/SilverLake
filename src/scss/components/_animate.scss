@@ -33,6 +33,11 @@
   &.to-small{
     transform: scale(1.5);
   }
+  &.hover-to-big{
+    &:hover{
+      transform: scale(1.3);
+    }
+  }
 }
 
 .element-animation.element-show {
