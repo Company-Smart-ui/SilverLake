@@ -120,6 +120,11 @@ input::-webkit-calendar-picker-indicator {
     }
   }
 }
+.fill{
+  &-accent{
+    fill: $accentColor;
+  }
+}
 .color{
   &-accent{
     color: $accentColor !important;
@@ -330,6 +335,9 @@ input::-webkit-calendar-picker-indicator {
 }
 .h-430{
   height: 430px;
+}
+.mh-320{
+  max-height: 320px;
 }
 .mw-150{
   max-width: 150px !important;
@@ -746,6 +754,11 @@ input::-webkit-calendar-picker-indicator {
       height: 100%;
     }
   }
+}
+figcaption{
+  border-left: 3px solid $accentColor;
+  padding-left: 10px;
+  line-height: 1.1;
 }
 .img-hero{
   max-width: 485px;
