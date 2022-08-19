@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>SilverLake | Activties</title>
+  <title>SilverLake | Contact</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"  content="page with very interesting content">
@@ -66,232 +66,165 @@
 <link rel="stylesheet" href="css/swiper-bundle.css" class='swiper-delay_js' data-time="5111"></link>
 <main class="main">
 
-    <!--   hero section -->
-    <section class="bg-accent pt-10r pt-xl-5r mb-5 mb-md-0 mb-lg-5r">
-    <div class="container">
-        <div class="row align-items-lg-center flex-md-row-reverse">
-            <div class="col-md-6 col-xl-7">
-                <div class="ps-3 pe-0 text-block">
-                    <div class="title modified">
-                        <span>activties for all</span>
-                        <h2>Fill your time at Silverlake</h2>
-                    </div>
-                    <div class="text color-white">
-                        <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <!--   form register -->
+    <section class="bg-second pt-5r pb-5r">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <div class="title mb-5r">
+                    <picture class="mb-3 d-block">
+                        <img class="w-auto" src="images/icons/compass-symbol.png" alt="compass-symbol">
+                    </picture>
+                    <span>we’ll respond as soon as possible</span>
+                    <h2>Contact us</h2>
+                </div>
+            </div>
+
+            <form class="needs-validation row justify-content-between fw-bolder mw-1000 m-auto" novalidate>
+                <div class="col-lg-6 col-12 mb-5">
+                    <label for="FirstName" class="form-label"></label>
+                    <input type="text" class="form-control color-accent bb-accent" id="FirstName" placeholder="First Name" required>
+                    <div class="invalid-feedback text-uppercase">
+                        Please enter your name
                     </div>
                 </div>
-                <div class="signature mb-5 pt-3 color-white">
-                    <p>Your time spent your way</p>
-                    <picture class="">
-                        <img src="images/icons/butterfly-white.png" alt="butterfly">
+                <div class="col-lg-6 col-12 mb-5">
+                    <label for="SurName" class="form-label"></label>
+                    <input type="text" class="form-control color-accent bb-accent" id="SurName" placeholder="SurName" required>
+                    <div class="invalid-feedback text-uppercase">
+                        Please enter your name
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 mb-5">
+                    <label for="userEmailAddress" class="form-label"></label>
+                    <input type="email" class="form-control color-accent bb-accent" id="userEmailAddress" placeholder="Email Address" required>
+                    <div class="invalid-feedback text-uppercase bg-second h-auto">
+                        Please enter your email
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 mb-5">
+                    <label for="userTelephone" class="form-label"></label>
+                    <input type="number" class="form-control color-accent bb-accent" id="userTelephone" placeholder="Telephone" required>
+                    <div class="invalid-feedback text-uppercase bg-second h-auto">
+                        Please enter your telephone
+                    </div>
+                </div>
+                <div class="col-12 mb-5">
+                    <label for="userAddress" class="form-label color-accent text-uppercase">address</label>
+                    <input type="text" class="form-control color-accent bb-accent" id="userAddress" required>
+                    <div class="invalid-feedback text-uppercase bg-second h-auto">
+                        Please enter your address
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 mb-5">
+                    <label for="userCity" class="form-label"></label>
+                    <input type="text" class="form-control color-accent bb-accent" id="userCity" placeholder="City" required>
+                    <div class="invalid-feedback text-uppercase bg-second h-auto">
+                        Please enter your city
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 mb-5">
+                    <label for="userPostcode" class="form-label"></label>
+                    <input type="number" class="form-control color-accent bb-accent" id="userPostcode" placeholder="Postcode" required>
+                    <div class="invalid-feedback text-uppercase bg-second h-auto">
+                        Please enter your postcode
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 mb-5 arrow-down-icon">
+                    <select class="form-control color-accent bb-accent text-uppercase" name="interest" id="userInterest">
+                        <option value="interest" disabled="disabled" selected="selected">interest</option>
+                        <option value="interest">interest</option>
+                        <option value="interest">interest</option>
+                    </select>
+                    <div class="invalid-feedback text-uppercase bg-second h-auto">
+                        Please enter your interest
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 mb-5 arrow-down-icon">
+                    <select class="form-control color-accent bb-accent text-uppercase" name="interest" id="whereHear">
+                        <option value="whereHear" disabled="disabled" selected="selected">where did you hear about us?</option>
+                        <option value="There">There</option>
+                        <option value="Here">Here</option>
+                    </select>
+                    <div class="invalid-feedback text-uppercase bg-second h-auto">
+                        Please enter your interest
+                    </div>
+                </div>
+                <div class="col-12 mb-5">
+                    <label for="userComments" class="form-label color-accent text-uppercase">Comments</label>
+                    <input type="text" class="form-control color-accent bb-accent" id="userComments" required>
+                    <div class="invalid-feedback text-uppercase bg-second h-auto">
+                        Please enter your comments
+                    </div>
+                </div>
+                <div class="col-12 mb-5">
+                    <div class="d-flex justify-content-between bb-accent text-uppercase color-accent custom-radio">
+                        <p class="col-9">would you like to receive monthly email updates from silverlake?</p>
+                        <div class="col text-lg-end">
+                            <input type="radio" name="emailUpdatesSilverlake" class="color-accent border-0" id="emailUpdatesSilverlakeYes" required>
+                            <label for="emailUpdatesSilverlakeYes" class="form-label color-accent text-uppercase custom-radio-label">yes</label>
+                        </div>
+                        <div class="col text-lg-end">
+                            <input type="radio" name="emailUpdatesSilverlake" class="color-accent border-0" id="emailUpdatesSilverlakeNo" required>
+                            <label for="emailUpdatesSilverlakeNo" class="form-label color-accent text-uppercase custom-radio-label">no</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-5">
+                    <div class="d-flex justify-content-between bb-accent text-uppercase color-accent custom-radio">
+                            <p class="col-9">Would you like to receive monthly email updates from our sister Estate in the Cotswolds, Lower Mill Estate?</p>
+                        <div class="col text-lg-end">
+                            <input type="radio" name="emailUpdatesEstate" class="color-accent border-0" id="emailUpdatesEstateYes" required>
+                            <label for="emailUpdatesEstateYes" class="form-label color-accent text-uppercase border-0 custom-radio-label">yes</label>
+                        </div>
+                        <div class="col text-lg-end">
+                            <input type="radio" name="emailUpdatesEstate" class="color-accent" id="emailUpdatesEstateNo" required>
+                            <label for="emailUpdatesEstateNo" class="form-label color-accent text-uppercase border-0 custom-radio-label">no</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-5">
+                    <div class="d-flex justify-content-between bb-accent text-uppercase color-accent custom-radio">
+                        <p class="col-9">Would you like to receive emails from Habitat Escapes, our holiday rental agent?</p>
+                        <div class="col text-lg-end">
+                            <input type="radio" name="emailUpdatesHabitat" class="color-accent border-0" id="emailUpdatesHabitatYes" required>
+                            <label for="emailUpdatesHabitatYes" class="form-label color-accent text-uppercase custom-radio-label">yes</label>
+                        </div>
+                        <div class="col text-lg-end">
+                            <input type="radio" name="emailUpdatesHabitat" class="color-accent border-0" id="emailUpdatesHabitatNo" required>
+                            <label for="emailUpdatesHabitatNo" class="form-label color-accent text-uppercase custom-radio-label">no</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="g-recaptcha mb-5" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div>
+                <div class="col-lg-6 col-12">
+                    <button class="button modified fw-bolder p-4 pt-3 pb-3" type="submit">SUBMIT</button>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+    <!--  map img with context  -->
+    <section class="pt-5r mb-5r">
+        <div class="container">
+            <div class="row d-flex align-items-lg-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <picture class="ms-auto me-auto mb-5 me-lg-5 d-block img-360x275 overflow-hidden h-100 element-animation to-big">
+                        <img class="w-100 h-100" src="images/map.jpg" alt="map">
                     </picture>
                 </div>
-            </div>
-            <div class="col-md-6 col-xl-5">
-                <picture class="d-block img-hero mb--50 mb-lg--70 overflow-hidden">
-                    <img class="w-100 h-100" src="images/hero/hero-activties.jpg" alt="hero-activties">
-                </picture>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <!--  treatments  -->
-    <section class="pt-5r">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-4 col-md-6 col-12 mb-5r transition-04" data-story="estate-films">
-    <div class="d-flex flex-column h-100 overflow-hidden">
-        <picture class="d-block mb-3">
-            <img class="w-100" src="images/blocks/activties-img-1.jpg" alt="activties-img-1">
-        </picture>
-        <div class="d-flex mb-3">
-            <span class="d-block bg-second border-accent text-uppercase color-accent fs-12 fw-semibold pe-1 ps-1 me-2">FREE</span>
-            <span class="d-block bg-second border-accent text-uppercase color-accent fs-12 fw-semibold pe-1 ps-1 me-2">YEAR-ROUND</span>
-        </div>
-        <h3 class="fs-2 color-accent text-start fw-semibold">Fishing at Silverlake</h3>
-        <div class="text-block color-gray mb-3">
-            <p>If you're a seasoned angler, you'll be pleased to learn that just a short 5 minute walk from your property sits Silverlake lake. An exclusive lake for our guests only, home to Carp, Tench, Bream and Roach ready for you to cast off and fish until your heart’s content.</p>
-        </div>
-        <div class="mt-auto row text-uppercase fs-14 fw-bolder color-accent mb-4">
-            <div class="col-5 bg-second ms-1 p-4 pt-3 pb-3">
-                <p class="mb-1 color-gray">DIFFICULTY</p>
-                <p class="mb-0">INTERMEDIATE</p>
-            </div>
-            <div class="col bg-second ms-1 p-4 pt-3 pb-3">
-                <p class="mb-1 color-gray">AGE</p>
-                <p class="mb-0">16+</p>
-            </div>
-            <div class="col-4 bg-second ms-1 p-4 pt-3 pb-3">
-                <p class="mb-1 color-gray">ATTENDEES</p>
-                <p class="mb-0">N/A</p>
-            </div>
-        </div>
-        <div class="me-auto ms-auto ms-md-0">
-            <a href="#" class="button modified text-decoration-none pe-3 ps-3">BOOK ACTIVITY</a>
-        </div>
-    </div>
-</div>
-                <div class="col-xl-4 col-md-6 col-12 mb-5r transition-04" data-story="estate-films">
-    <div class="d-flex flex-column h-100 overflow-hidden">
-        <picture class="d-block mb-3">
-            <img class="w-100" src="images/blocks/activties-img-2.jpg" alt="activties-img-2">
-        </picture>
-        <div class="d-flex mb-3">
-            <span class="d-block bg-second border-accent text-uppercase color-accent fs-12 fw-semibold pe-1 ps-1 me-2">FREE</span>
-            <span class="d-block bg-second border-accent text-uppercase color-accent fs-12 fw-semibold pe-1 ps-1 me-2">YEAR-ROUND</span>
-        </div>
-        <h3 class="fs-2 color-accent text-start fw-semibold">Miss Dormouse Trail</h3>
-        <div class="text-block color-gray mb-3">
-            <p>The Miss Dormouse Trail is a family-friendly treasure trail around Silverlake's acres of nature reserve.</p>
-        </div>
-        <div class="mt-auto row text-uppercase fs-14 fw-bolder color-accent mb-4">
-            <div class="col-5 bg-second ms-1 p-4 pt-3 pb-3">
-                <p class="mb-1 color-gray">DIFFICULTY</p>
-                <p class="mb-0">EASY</p>
-            </div>
-            <div class="col bg-second ms-1 p-4 pt-3 pb-3">
-                <p class="mb-1 color-gray">AGE</p>
-                <p class="mb-0">ANY</p>
-            </div>
-            <div class="col-4 bg-second ms-1 p-4 pt-3 pb-3">
-                <p class="mb-1 color-gray">ATTENDEES</p>
-                <p class="mb-0">N/A</p>
-            </div>
-        </div>
-        <div class="me-auto ms-auto ms-md-0">
-            <a href="#" class="button modified text-decoration-none pe-3 ps-3">BOOK ACTIVITY</a>
-        </div>
-    </div>
-</div>
-                <div class="col-xl-4 col-md-6 col-12 mb-5r transition-04" data-story="estate-films">
-    <div class="d-flex flex-column h-100 overflow-hidden">
-        <picture class="d-block mb-3">
-            <img class="w-100" src="images/blocks/activties-img-3.jpg" alt="activties-img-3">
-        </picture>
-        <div class="d-flex mb-3">
-            <span class="d-block bg-second border-accent text-uppercase color-accent fs-12 fw-semibold pe-1 ps-1 me-2">FREE</span>
-            <span class="d-block bg-second border-accent text-uppercase color-accent fs-12 fw-semibold pe-1 ps-1 me-2">YEAR-ROUND</span>
-        </div>
-        <h3 class="fs-2 color-accent text-start fw-semibold">The Yurt</h3>
-        <div class="text-block color-gray mb-3">
-            <p>Our traditional handmade yurt is the perfect spot for a lazy afternoon playing board games, telling stories, reconnecting with loved ones and making new friends around the log burning stove.</p>
-        </div>
-        <div class="mt-auto row text-uppercase fs-14 fw-bolder color-accent mb-4">
-            <div class="col-5 bg-second ms-1 p-4 pt-3 pb-3">
-                <p class="mb-1 color-gray">DIFFICULTY</p>
-                <p class="mb-0">N/A</p>
-            </div>
-            <div class="col bg-second ms-1 p-4 pt-3 pb-3">
-                <p class="mb-1 color-gray">AGE</p>
-                <p class="mb-0">N/A</p>
-            </div>
-            <div class="col-4 bg-second ms-1 p-4 pt-3 pb-3">
-                <p class="mb-1 color-gray">ATTENDEES</p>
-                <p class="mb-0">N/A</p>
-            </div>
-        </div>
-        <div class="me-auto ms-auto ms-md-0">
-            <a href="#" class="button modified text-decoration-none pe-3 ps-3">BOOK ACTIVITY</a>
-        </div>
-    </div>
-</div>
-                <div class="col-xl-4 col-md-6 col-12 mb-5r transition-04" data-story="estate-films">
-    <div class="d-flex flex-column h-100 overflow-hidden">
-        <picture class="d-block mb-3">
-            <img class="w-100" src="images/blocks/activties-img-1.jpg" alt="activties-img-1">
-        </picture>
-        <div class="d-flex mb-3">
-            <span class="d-block bg-second border-accent text-uppercase color-accent fs-12 fw-semibold pe-1 ps-1 me-2">FREE</span>
-            <span class="d-block bg-second border-accent text-uppercase color-accent fs-12 fw-semibold pe-1 ps-1 me-2">YEAR-ROUND</span>
-        </div>
-        <h3 class="fs-2 color-accent text-start fw-semibold">Fishing at Silverlake</h3>
-        <div class="text-block color-gray mb-3">
-            <p>If you're a seasoned angler, you'll be pleased to learn that just a short 5 minute walk from your property sits Silverlake lake. An exclusive lake for our guests only, home to Carp, Tench, Bream and Roach ready for you to cast off and fish until your heart’s content.</p>
-        </div>
-        <div class="mt-auto row text-uppercase fs-14 fw-bolder color-accent mb-4">
-            <div class="col-5 bg-second ms-1 p-4 pt-3 pb-3">
-                <p class="mb-1 color-gray">DIFFICULTY</p>
-                <p class="mb-0">INTERMEDIATE</p>
-            </div>
-            <div class="col bg-second ms-1 p-4 pt-3 pb-3">
-                <p class="mb-1 color-gray">AGE</p>
-                <p class="mb-0">16+</p>
-            </div>
-            <div class="col-4 bg-second ms-1 p-4 pt-3 pb-3">
-                <p class="mb-1 color-gray">ATTENDEES</p>
-                <p class="mb-0">N/A</p>
-            </div>
-        </div>
-        <div class="me-auto ms-auto ms-md-0">
-            <a href="#" class="button modified text-decoration-none pe-3 ps-3">BOOK ACTIVITY</a>
-        </div>
-    </div>
-</div>
-                <div class="col-xl-4 col-md-6 col-12 mb-5r transition-04" data-story="estate-films">
-    <div class="d-flex flex-column h-100 overflow-hidden">
-        <picture class="d-block mb-3">
-            <img class="w-100" src="images/blocks/activties-img-2.jpg" alt="activties-img-2">
-        </picture>
-        <div class="d-flex mb-3">
-            <span class="d-block bg-second border-accent text-uppercase color-accent fs-12 fw-semibold pe-1 ps-1 me-2">FREE</span>
-            <span class="d-block bg-second border-accent text-uppercase color-accent fs-12 fw-semibold pe-1 ps-1 me-2">YEAR-ROUND</span>
-        </div>
-        <h3 class="fs-2 color-accent text-start fw-semibold">Miss Dormouse Trail</h3>
-        <div class="text-block color-gray mb-3">
-            <p>The Miss Dormouse Trail is a family-friendly treasure trail around Silverlake's acres of nature reserve.</p>
-        </div>
-        <div class="mt-auto row text-uppercase fs-14 fw-bolder color-accent mb-4">
-            <div class="col-5 bg-second ms-1 p-4 pt-3 pb-3">
-                <p class="mb-1 color-gray">DIFFICULTY</p>
-                <p class="mb-0">EASY</p>
-            </div>
-            <div class="col bg-second ms-1 p-4 pt-3 pb-3">
-                <p class="mb-1 color-gray">AGE</p>
-                <p class="mb-0">ANY</p>
-            </div>
-            <div class="col-4 bg-second ms-1 p-4 pt-3 pb-3">
-                <p class="mb-1 color-gray">ATTENDEES</p>
-                <p class="mb-0">N/A</p>
-            </div>
-        </div>
-        <div class="me-auto ms-auto ms-md-0">
-            <a href="#" class="button modified text-decoration-none pe-3 ps-3">BOOK ACTIVITY</a>
-        </div>
-    </div>
-</div>
-                <div class="col-xl-4 col-md-6 col-12 mb-5r transition-04" data-story="estate-films">
-    <div class="d-flex flex-column h-100 overflow-hidden">
-        <picture class="d-block mb-3">
-            <img class="w-100" src="images/blocks/activties-img-3.jpg" alt="activties-img-3">
-        </picture>
-        <div class="d-flex mb-3">
-            <span class="d-block bg-second border-accent text-uppercase color-accent fs-12 fw-semibold pe-1 ps-1 me-2">FREE</span>
-            <span class="d-block bg-second border-accent text-uppercase color-accent fs-12 fw-semibold pe-1 ps-1 me-2">YEAR-ROUND</span>
-        </div>
-        <h3 class="fs-2 color-accent text-start fw-semibold">The Yurt</h3>
-        <div class="text-block color-gray mb-3">
-            <p>Our traditional handmade yurt is the perfect spot for a lazy afternoon playing board games, telling stories, reconnecting with loved ones and making new friends around the log burning stove.</p>
-        </div>
-        <div class="mt-auto row text-uppercase fs-14 fw-bolder color-accent mb-4">
-            <div class="col-5 bg-second ms-1 p-4 pt-3 pb-3">
-                <p class="mb-1 color-gray">DIFFICULTY</p>
-                <p class="mb-0">N/A</p>
-            </div>
-            <div class="col bg-second ms-1 p-4 pt-3 pb-3">
-                <p class="mb-1 color-gray">AGE</p>
-                <p class="mb-0">N/A</p>
-            </div>
-            <div class="col-4 bg-second ms-1 p-4 pt-3 pb-3">
-                <p class="mb-1 color-gray">ATTENDEES</p>
-                <p class="mb-0">N/A</p>
-            </div>
-        </div>
-        <div class="me-auto ms-auto ms-md-0">
-            <a href="#" class="button modified text-decoration-none pe-3 ps-3">BOOK ACTIVITY</a>
-        </div>
-    </div>
-</div>
+                <div class="col-lg-6">
+                    <div class="mb-5 ps-3 p-lg-0 pe-0 text-block">
+                        <div class="title">
+                            <span>how to find us</span>
+                            <h2>Travel into another world</h2>
+                        </div>
+                        <div class="text">
+                            <p class="mb-3 color-second"><a class="color-accent text-decoration-none fw-semibold" href="#">Silverlake</a>, Warmwell Road, Dorchester, Dorset, DT2 8GH</p>
+                            <a class="link" href="#">find us</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -474,7 +407,7 @@
 </section>
 
 </div>
-
+<script src='https://www.google.com/recaptcha/api.js'></script>
 <script  src="js/main.js"> </script>
 </body>
 

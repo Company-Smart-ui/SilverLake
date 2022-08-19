@@ -101,6 +101,68 @@ input::-webkit-calendar-picker-indicator {
     pointer-events: none;
   }
 }
+.arrow-down-icon{
+  position: relative;
+  &::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    height: 25px;
+    width: 12px;
+    margin-top: -2px;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    pointer-events: none;
+    background-image: url(../images/icons/icon-down-arrow-accent.png);
+    background-repeat: no-repeat;
+  }
+}
+.custom-radio [type="radio"]:checked,.custom-radio [type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+.custom-radio [type="radio"]:checked + .custom-radio-label,.custom-radio [type="radio"]:not(:checked) + .custom-radio-label {
+  position: relative;
+  padding: 4px 0 4px 38px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.custom-radio [type="radio"]:checked + .custom-radio-label:before,.custom-radio [type="radio"]:not(:checked) + .custom-radio-label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 26px;
+  height: 26px;
+  border: 1px solid $accentColor;
+  border-radius: 100%;
+  background: $secondColor;
+}
+
+.custom-radio [type="radio"]:checked + .custom-radio-label:after,.custom-radio [type="radio"]:not(:checked) + .custom-radio-label:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: $accentColor;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  border-radius: 100%;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+.custom-radio [type="radio"]:not(:checked) + .custom-radio-label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+.custom-radio [type="radio"]:checked + .custom-radio-label:after {
+  opacity: 1;
+  transform: scale(1);
+}
 
 .bg {
   &-accent {
