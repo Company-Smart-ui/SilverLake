@@ -641,7 +641,14 @@ input::-webkit-calendar-picker-indicator {
     }
   }
 }
-
+.search-wrap{
+  @include lg{
+    background: rgba($secondColor, .8);
+    .search{
+      background-color: transparent;
+    }
+  }
+}
 .search{
   background: $accentColor;
   color: $secondColor;
@@ -652,8 +659,8 @@ input::-webkit-calendar-picker-indicator {
   z-index: 4;
   @include lg{
     position: static;
-    background: $secondColor;
     color: $accentColor;
+    background: rgba($secondColor, .5);
   }
   &.active{
     height: 100%;
@@ -983,5 +990,54 @@ figcaption{
   button.active{
     color: white !important;
     background: $accentColor !important;
+  }
+}
+.faqs{
+  color: $grayColor;
+  .title{
+    margin-bottom: 3rem;
+    margin-left: 0;
+  }
+  .faqs-block{
+    border-bottom: 2px solid $accentColor;
+    margin-bottom: 20px;
+  }
+  ul{
+    p{
+      margin-left: -2rem;
+      margin-bottom: 0;
+    }
+  }
+  li{
+    list-style: disc;
+  }
+  a{
+    font-weight: 700;
+  }
+  .faqs-wrap{
+    padding: 5rem 0;
+    background: white;
+    h3{
+      color: $accentColor;
+      font-weight: 600;
+      font-size: 20px;
+    }
+    a{
+      color: $grayColor;
+    }
+
+    &:nth-child(even){
+      background: $accentColor;
+      color: white;
+      .title{
+        border-color: white;
+      }
+      a, .title, h3{
+        color: white;
+      }
+      .faqs-block{
+        border-color: white;
+      }
+    }
   }
 }

@@ -7366,6 +7366,9 @@ textarea.form-control-lg {
 .bottom-0 {
   bottom: 0 !important;
 }
+.bottom-10{
+  bottom: 10px;
+}
 
 .bottom-50 {
   bottom: 50% !important;

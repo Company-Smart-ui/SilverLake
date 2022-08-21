@@ -136,12 +136,11 @@ class: "fixed"
                         </div>
                     </div>
                 </div>
-                <div class="g-recaptcha mb-5" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div>
+                <div class="g-recaptcha mb-5" data-sitekey="your-key-site"></div>
                 <div class="col-lg-6 col-12">
                     <button class="button modified fw-bolder p-4 pt-3 pb-3" type="submit">SUBMIT</button>
                 </div>
             </form>
-
         </div>
     </section>
 
@@ -175,12 +174,7 @@ class: "fixed"
 @@include('./html-templates/footer.html',{
 })
 <div class="mb-5r pb-3"></div>
-
-<section class="bg-second pt-3 pb-3 position-fixed bottom-0 start-0 w-100 z-i-5 search-bottom">
-    <div class="mw-1200">
-        @@include("./html-templates/modules/search.html")
-    </div>
-</section>
+@@include("./html-templates/modules/search.html")
 
 </div>
 <script src='https://www.google.com/recaptcha/api.js'></script>

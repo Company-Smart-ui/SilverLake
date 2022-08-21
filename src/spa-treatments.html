@@ -216,8 +216,7 @@ class: "fixed"
                         Please enter your name
                     </div>
                 </div>
-                <div class="col-lg-4 col-12 mb-3 mb-lg-4">
-                    <label for="treatment" class="form-label"></label>
+                <div class="col-lg-4 col-12 mb-3 mb-lg-4 mt-4 arrow-down-icon">
                     <select class="form-control color-accent bb-accent text-uppercase" id="treatment" required>
                         <option value="treatment">treatment</option>
                         <option value="treatment">treatment</option>
@@ -263,12 +262,7 @@ class: "fixed"
 @@include('./html-templates/footer.html',{
 })
 <div class="mb-5r pb-3"></div>
-
-<section class="bg-second pt-3 pb-3 position-fixed bottom-0 start-0 w-100 z-i-5 search-bottom">
-    <div class="mw-1200">
-        @@include("./html-templates/modules/search.html")
-    </div>
-</section>
+@@include("./html-templates/modules/search.html")
 
 </div>
 
