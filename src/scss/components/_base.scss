@@ -517,6 +517,9 @@ input::-webkit-calendar-picker-indicator {
     margin: auto;
   }
 }
+.mb-6r{
+  margin-bottom: 6rem;
+}
 .mb--50{
   margin-bottom: -50px !important;
 }
@@ -930,6 +933,9 @@ figcaption{
       z-index: -1;
     }
   }
+}
+.bg-cover{
+  background-size: cover;
 }
 .bg-full-mobile-second{
   @media screen and(max-width: 991px) {

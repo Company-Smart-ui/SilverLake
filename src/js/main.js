@@ -241,7 +241,7 @@ let elementsAnimate = document.querySelectorAll('.element-animation');
     const searchBottom = document.querySelector('.search-bottom');
     const footer = document.querySelector('.footer');
     if(search && !searchBottom){
-        footer.classList.add('mb-5r', 'mb-lg-0' );
+        footer.classList.add('mb-6r', 'mb-lg-0' );
     }
 })();
 
