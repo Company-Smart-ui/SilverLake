@@ -2857,6 +2857,9 @@ textarea.form-control-lg {
   background-position: right calc(0.375em + 0.1875rem) center;
   background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
+.not-valid:valid{
+  background-image: none !important;
+}
 .was-validated .form-control:valid:focus, .form-control.is-valid:focus {
   border-color: #198754;
 }

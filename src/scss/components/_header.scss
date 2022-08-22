@@ -6,7 +6,7 @@ $header-bgc: rgb(242, 250, 255);
     font-size: 24px;
     color: #fff;
 
-    z-index: 5;
+    z-index: 4;
     max-width: 100%;
     overflow: hidden;
     position: fixed;
@@ -249,6 +249,14 @@ $header-bgc: rgb(242, 250, 255);
         }
         @include xl{
             padding-top: 0;
+        }
+    }
+    &.fixe{
+        .logo-white{
+            display: block;
+        }
+        .logo-blue{
+            display: none;
         }
     }
 }

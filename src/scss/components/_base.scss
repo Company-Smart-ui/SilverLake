@@ -857,6 +857,21 @@ input::-webkit-calendar-picker-indicator {
     }
   }
 }
+.blog-content{
+  figure{
+    picture{
+      overflow: hidden;
+      img{
+        transition: .4s;
+      }
+      &:hover{
+        img{
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
 figcaption{
   border-left: 3px solid $accentColor;
   padding-left: 10px;

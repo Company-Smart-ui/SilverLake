@@ -10,7 +10,7 @@ class: "fixed menu-blue"
     <!--   form register -->
     <section class="bg-second pt-5r pb-5r">
         <div class="container">
-            <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-lg-center">
                 <div class="title mb-5r">
                     <picture class="mb-3 d-block">
                         <img class="w-auto" src="images/icons/compass-symbol.png" alt="compass-symbol">
@@ -50,7 +50,7 @@ class: "fixed menu-blue"
                     </div>
                 </div>
                 <div class="col-12 mb-5">
-                    <label for="userAddress" class="form-label color-accent text-uppercase">address</label>
+                    <label for="userAddress" class="form-label color-accent text-uppercase mb-5">address</label>
                     <input type="text" class="form-control color-accent bb-accent" id="userAddress" required>
                     <div class="invalid-feedback text-uppercase bg-second h-auto">
                         Please enter your address
@@ -71,7 +71,7 @@ class: "fixed menu-blue"
                     </div>
                 </div>
                 <div class="col-lg-6 col-12 mb-5 arrow-down-icon">
-                    <select class="form-control color-accent bb-accent text-uppercase" name="interest" id="userInterest">
+                    <select class="form-control not-valid color-accent bb-accent text-uppercase" name="interest" id="userInterest">
                         <option value="interest" disabled="disabled" selected="selected">interest</option>
                         <option value="interest">interest</option>
                         <option value="interest">interest</option>
@@ -81,7 +81,7 @@ class: "fixed menu-blue"
                     </div>
                 </div>
                 <div class="col-lg-6 col-12 mb-5 arrow-down-icon">
-                    <select class="form-control color-accent bb-accent text-uppercase" name="interest" id="whereHear">
+                    <select class="form-control not-valid color-accent bb-accent text-uppercase" name="interest" id="whereHear">
                         <option value="whereHear" disabled="disabled" selected="selected">where did you hear about us?</option>
                         <option value="There">There</option>
                         <option value="Here">Here</option>
@@ -91,53 +91,59 @@ class: "fixed menu-blue"
                     </div>
                 </div>
                 <div class="col-12 mb-5">
-                    <label for="userComments" class="form-label color-accent text-uppercase">Comments</label>
+                    <label for="userComments" class="form-label color-accent text-uppercase mb-5">Comments</label>
                     <input type="text" class="form-control color-accent bb-accent" id="userComments" required>
                     <div class="invalid-feedback text-uppercase bg-second h-auto">
                         Please enter your comments
                     </div>
                 </div>
                 <div class="col-12 mb-5">
-                    <div class="d-flex justify-content-between bb-accent text-uppercase color-accent custom-radio">
-                        <p class="col-9">would you like to receive monthly email updates from silverlake?</p>
-                        <div class="col text-lg-end">
-                            <input type="radio" name="emailUpdatesSilverlake" class="color-accent border-0" id="emailUpdatesSilverlakeYes" required>
-                            <label for="emailUpdatesSilverlakeYes" class="form-label color-accent text-uppercase custom-radio-label">yes</label>
-                        </div>
-                        <div class="col text-lg-end">
-                            <input type="radio" name="emailUpdatesSilverlake" class="color-accent border-0" id="emailUpdatesSilverlakeNo" required>
-                            <label for="emailUpdatesSilverlakeNo" class="form-label color-accent text-uppercase custom-radio-label">no</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 mb-5">
-                    <div class="d-flex justify-content-between bb-accent text-uppercase color-accent custom-radio">
-                            <p class="col-9">Would you like to receive monthly email updates from our sister Estate in the Cotswolds, Lower Mill Estate?</p>
-                        <div class="col text-lg-end">
-                            <input type="radio" name="emailUpdatesEstate" class="color-accent border-0" id="emailUpdatesEstateYes" required>
-                            <label for="emailUpdatesEstateYes" class="form-label color-accent text-uppercase border-0 custom-radio-label">yes</label>
-                        </div>
-                        <div class="col text-lg-end">
-                            <input type="radio" name="emailUpdatesEstate" class="color-accent" id="emailUpdatesEstateNo" required>
-                            <label for="emailUpdatesEstateNo" class="form-label color-accent text-uppercase border-0 custom-radio-label">no</label>
+                    <div class="d-flex row justify-content-between align-items-center bb-accent text-uppercase color-accent custom-radio">
+                        <p class="col-12 col-lg-9">would you like to receive monthly email updates from silverlake?</p>
+                        <div class="col-3 text-lg-end d-flex justify-content-lg-end mb-3 mb-lg-0">
+                            <div class="me-5">
+                                <input type="radio" name="emailUpdatesSilverlake" class="color-accent border-0" id="emailUpdatesSilverlakeYes" required>
+                                <label for="emailUpdatesSilverlakeYes" class="form-label color-accent text-uppercase custom-radio-label">yes</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="emailUpdatesSilverlake" class="color-accent border-0" id="emailUpdatesSilverlakeNo" required>
+                                <label for="emailUpdatesSilverlakeNo" class="form-label color-accent text-uppercase custom-radio-label">no</label>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 mb-5">
-                    <div class="d-flex justify-content-between bb-accent text-uppercase color-accent custom-radio">
-                        <p class="col-9">Would you like to receive emails from Habitat Escapes, our holiday rental agent?</p>
-                        <div class="col text-lg-end">
-                            <input type="radio" name="emailUpdatesHabitat" class="color-accent border-0" id="emailUpdatesHabitatYes" required>
-                            <label for="emailUpdatesHabitatYes" class="form-label color-accent text-uppercase custom-radio-label">yes</label>
-                        </div>
-                        <div class="col text-lg-end">
-                            <input type="radio" name="emailUpdatesHabitat" class="color-accent border-0" id="emailUpdatesHabitatNo" required>
-                            <label for="emailUpdatesHabitatNo" class="form-label color-accent text-uppercase custom-radio-label">no</label>
+                    <div class="row d-flex justify-content-between align-items-center bb-accent text-uppercase color-accent custom-radio">
+                            <p class="col-12 col-lg-9">Would you like to receive monthly email updates from our sister Estate in the Cotswolds, Lower Mill Estate?</p>
+                        <div class="col-3 text-lg-end d-flex justify-content-lg-end mb-3 mb-lg-0">
+                            <div class="me-5">
+                                <input type="radio" name="emailUpdatesEstate" class="color-accent border-0" id="emailUpdatesEstateYes" required>
+                                <label for="emailUpdatesEstateYes" class="form-label color-accent text-uppercase border-0 custom-radio-label">yes</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="emailUpdatesEstate" class="color-accent" id="emailUpdatesEstateNo" required>
+                                <label for="emailUpdatesEstateNo" class="form-label color-accent text-uppercase border-0 custom-radio-label">no</label>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="g-recaptcha mb-5" data-sitekey="your-key-site"></div>
-                <div class="col-lg-6 col-12">
+                <div class="col-12 mb-5">
+                    <div class="d-flex row justify-content-between align-items-center bb-accent text-uppercase color-accent custom-radio">
+                        <p class="col-12 col-lg-9">Would you like to receive emails from Habitat Escapes, our holiday rental agent?</p>
+                        <div class="col-3 text-lg-end d-flex justify-content-lg-end mb-3 mb-lg-0">
+                            <div class="me-5">
+                                <input type="radio" name="emailUpdatesHabitat" class="color-accent border-0" id="emailUpdatesHabitatYes" required>
+                                <label for="emailUpdatesHabitatYes" class="form-label color-accent text-uppercase custom-radio-label">yes</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="emailUpdatesHabitat" class="color-accent border-0" id="emailUpdatesHabitatNo" required>
+                                <label for="emailUpdatesHabitatNo" class="form-label color-accent text-uppercase custom-radio-label">no</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-6 m-auto me-lg-0 ms-lg-0 g-recaptcha mb-5 p-0" data-sitekey="your-key-site"></div>
+                <div class="col-lg-6 col-12 p-0 text-center text-lg-start">
                     <button class="button modified fw-bolder p-4 pt-3 pb-3" type="submit">SUBMIT</button>
                 </div>
             </form>
