@@ -13,11 +13,14 @@ $header-bgc: rgb(242, 250, 255);
     top: 0;
     left: 0;
     right: 0;
-    padding-top: 20px;
     background-color: transparent;
     transition: 0.3s;
     height: 100px;
+    @include sm{
+        height: 130px;
+    }
     @include md{
+        padding-top: 20px;
         height: 150px;
         font-size: 16px;
     }
@@ -52,9 +55,9 @@ $header-bgc: rgb(242, 250, 255);
         }
     }
     &-logo {
-        width: 90px;
-        margin-left: auto;
-        @include md{
+        width: 110px;
+        margin: auto;
+        @include sm{
             width: 145px;
         }
         .logo-white{
@@ -72,6 +75,9 @@ $header-bgc: rgb(242, 250, 255);
         }
     }
     &.scroll, &.fixed{
+        .header-logo{
+            margin-right: 0;
+        }
         @include xl{
             padding-top: 15px;
             background: white;
