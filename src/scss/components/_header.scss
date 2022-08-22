@@ -25,6 +25,9 @@ $header-bgc: rgb(242, 250, 255);
         height: auto;
         padding-top: 50px;
         font-size: 13px;
+        .menu-item.active{
+            border-bottom: 1px solid white;
+        }
     }
     @include xxl{
         font-size: 16px;
@@ -76,6 +79,9 @@ $header-bgc: rgb(242, 250, 255);
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                border-bottom: 1px solid $accentColor;
+            }
+            .menu-item.active{
                 border-bottom: 1px solid $accentColor;
             }
             svg{

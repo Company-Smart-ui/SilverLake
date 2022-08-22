@@ -75,7 +75,7 @@ var swiper = new Swiper(".HomepageSwiperBlocks", {
         },
     },
 });
-var swiper = new Swiper(".SwiperResale", {
+var SwiperResale = new Swiper(".SwiperResale", {
     slidesPerView: 1,
     spaceBetween: 20,
     loop: true,
@@ -93,6 +93,28 @@ var swiper = new Swiper(".SwiperResale", {
         prevEl: '.swiper-btn-prev',
     },
 });
+(function(){
+    if(SwiperResale){
+        let arrowNext  = document.querySelectorAll('.swiper-btn-next');
+        arrowNext.forEach(item => {
+            item.addEventListener('click', function(){
+                item.classList.add('click');
+                setTimeout(function (){
+                    item.classList.remove('click')
+                }, 300);
+            })
+        })
+        let arrowPrev  = document.querySelectorAll('.swiper-btn-prev');
+        arrowPrev.forEach(item => {
+            item.addEventListener('click', function(){
+                item.classList.add('click');
+                setTimeout(function (){
+                    item.classList.remove('click')
+                }, 300);
+            })
+        })
+    }
+})();
 
 // gallery Swiper
 var swiper = new Swiper(".gallerySwiper", {

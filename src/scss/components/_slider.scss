@@ -218,6 +218,7 @@
     font-weight: 600;
   }
   .swiper-button-next, .swiper-button-prev{
+    transition: .4s;
     display: block;
     color: $accentColor;
     top: auto;
@@ -229,12 +230,18 @@
       content: "\2190";
       font-size: 35px;
     }
+    &.click{
+      left: -7px;
+    }
   }
   .swiper-button-next{
     right: 10px;
     &:after{
       content: "\2192";
       font-size: 35px;
+    }
+    &.click{
+      right: 3px;
     }
   }
 }

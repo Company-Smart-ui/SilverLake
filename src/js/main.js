@@ -20,6 +20,20 @@ window.onload= function(){
   }
 };
 
+
+function activeItemMenu(){
+    var location = window.location.href;
+    var cur_url = location.split('/').pop().substr(0, 3);
+    const menuItem = document.querySelectorAll('.menu-item');
+    menuItem.forEach(item =>{
+        var link = item.querySelector('a').getAttribute('href').substr(0, 3);
+        if(cur_url === link){
+            item.classList.add('active');
+        }
+    })
+}
+activeItemMenu();
+
 function closePopUp(){
     if(navBtnPopUp) {
         navBtnPopUp.addEventListener('click', function(){
