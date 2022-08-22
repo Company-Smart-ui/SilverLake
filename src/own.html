@@ -94,46 +94,18 @@
     <section>
         <div class="swiper-container OwnSwiperFull bg-second">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="container">
-                        <div class="p-4 mw-650 me-lg-0 bg-accent color-white text-center ff-acaslonpro-italic fs-4 z-i-2 me-4 ms-4 me-md-auto ms-md-auto mb--50">
-                            <p class="m-0">Lighthouse</p>
-                        </div>
-                    </div>
-                    <picture>
-                        <img src="images/own-slider-full/own-slider-full.jpg" alt="slider-full-item">
-                    </picture>
-                </div>
-                <div class="swiper-slide">
-                    <div class="container">
-                        <div class="p-4 mw-650 me-lg-0 bg-accent color-white text-center ff-acaslonpro-italic fs-4 z-i-2 me-4 ms-4 me-md-auto ms-md-auto mb--50">
-                            <p class="m-0">Lighthouse 2</p>
-                        </div>
-                    </div>
-                    <picture>
-                        <img src="images/own-slider-full/own-slider-full.jpg" alt="slider-full-item">
-                    </picture>
-                </div>
-                <div class="swiper-slide">
-                    <div class="container">
-                        <div class="p-4 mw-650 me-lg-0 bg-accent color-white text-center ff-acaslonpro-italic fs-4 z-i-2 me-4 ms-4 me-md-auto ms-md-auto mb--50">
-                            <p class="m-0">Lighthouse 3</p>
-                        </div>
-                    </div>
-                    <picture>
-                        <img src="images/own-slider-full/own-slider-full.jpg" alt="slider-full-item">
-                    </picture>
-                </div>
-                <div class="swiper-slide">
-                    <div class="container">
-                        <div class="p-4 mw-650 me-lg-0 bg-accent color-white text-center ff-acaslonpro-italic fs-4 z-i-2 me-4 ms-4 me-md-auto ms-md-auto mb--50">
-                            <p class="m-0">Lighthouse 4</p>
-                        </div>
-                    </div>
-                    <picture>
-                        <img src="images/own-slider-full/own-slider-full.jpg" alt="slider-full-item">
-                    </picture>
-                </div>
+                @@include('html-templates/modules/own-full-slider.html',{
+                title: "Lighthouse",
+                })
+                @@include('html-templates/modules/own-full-slider.html',{
+                title: "Lighthouse 2",
+                })
+                @@include('html-templates/modules/own-full-slider.html',{
+                title: "Lighthouse 3",
+                })
+                @@include('html-templates/modules/own-full-slider.html',{
+                title: "Lighthouse 4",
+                })
             </div>
             <div class="container position-relative">
                 <div class="swiper-pagination swiper-full-pagination-init mw-lg-650 end-0 start-auto w-100"></div>

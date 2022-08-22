@@ -201,31 +201,55 @@ $header-bgc: rgb(242, 250, 255);
             background-color: white;
             transition: .3s;
             box-shadow: 0 1px 4px rgb(42 42 42 / 40%);
-            @include md{
+            @include sm{
                 height: 4px;
             }
         }
         &:before {
-            top: 10px;
-            @include md{
+            top: 15px;
+            @include sm{
                 top: 20px;
             }
         }
         &:after {
-            top: 20px;
+            top: 30px;
             max-width: 35px;
             min-width: 15px;
             width: 10vw;
-            @include md{
+            @include sm{
                 top: 40px;
             }
         }
-        @include md{
+        @include sm{
             height: 4px;
         }
     }
     @include xl{
         display: none;
+    }
+}
+.menu-blue{
+    .close{
+        span{
+            background-color: $accentColor;
+            &:before, &:after{
+                background-color: $accentColor;
+            }
+        }
+    }
+    .logo-white{
+        display: none;
+    }
+    .logo-blue{
+        display: block;
+        padding-top: 20px;
+        width: 90px;
+        @include sm{
+            width: 130px;
+        }
+        @include xl{
+            padding-top: 0;
+        }
     }
 }
 
