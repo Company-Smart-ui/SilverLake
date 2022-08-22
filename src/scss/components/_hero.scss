@@ -19,6 +19,7 @@
   }
   &-second{
     height: auto;
+    max-height: none;
     @include md{
       &::after{
         display: none;
