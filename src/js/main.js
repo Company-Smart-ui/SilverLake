@@ -286,7 +286,7 @@ function firterStories(){
 }
 firterStories();
 
-// firter Treatments
+// firter Treatments / blogs
 function firterTreatments(){
     const arrTreatments = Array.from(document.querySelectorAll('[data-block]'));
     const arrBtn = Array.from(document.querySelectorAll('[data-button]'));
@@ -298,22 +298,20 @@ function firterTreatments(){
                     iBtn.classList.remove('bg-accent', 'color-white');
                 })
                 if(item.classList.contains('bg-accent')){
+                    arrTreatments.forEach(elem => {
+                        elem.classList.remove('d-none');
+                    })
                     item.classList.remove('bg-accent', 'color-white');
+                    return;
                 }else{
                     item.classList.add('bg-accent', 'color-white');
                 }
-                arrTreatments.filter(elem => { if(elem.dataset.block === item.dataset.button){
-                    if(elem.classList.contains('active')){
-                        arrTreatments.forEach(e => e.classList.remove('d-none'));
-                        elem.classList.remove('active');
-                    } else{
-                        arrTreatments.forEach(e =>{
-                            e.classList.add('d-none');
-                            e.classList.remove('active');
-                        });
+                arrTreatments.forEach(elem => {
+                    if(elem?.dataset?.block?.indexOf(item.dataset.button)!== -1){
                         elem.classList.remove('d-none');
-                        elem.classList.add('active');
-                    }}
+                    } else{
+                        elem.classList.add('d-none');
+                    }
                 })
             })
         })
