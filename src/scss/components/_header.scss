@@ -79,11 +79,12 @@ $header-bgc: rgb(242, 250, 255);
         @include xl{
             padding-top: 15px;
             background: white;
+            border-bottom: 1px solid $accentColor;
             .container{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                border-bottom: 1px solid $accentColor;
+                //border-bottom: 1px solid $accentColor;
             }
             .menu-item.active{
                 border-bottom: 1px solid $accentColor;

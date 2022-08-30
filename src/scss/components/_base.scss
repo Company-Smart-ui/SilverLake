@@ -22,7 +22,7 @@ body{
 }
 
 .footer-to-bottom{
-  max-width: 1400px;
+  //max-width: 1400px;
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
@@ -238,7 +238,7 @@ input::-webkit-calendar-picker-indicator {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  max-height: 700px;
+  //max-height: 700px;
   margin: auto;
   &.cancel{
     display: none;
