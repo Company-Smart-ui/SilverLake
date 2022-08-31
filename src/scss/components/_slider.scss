@@ -121,6 +121,11 @@
         height: 100%;
       }
     }
+    @include xxl{
+      img{
+        max-height: 70vh;
+      }
+    }
   }
   .swiper-pagination-bullet{
     background: white;
@@ -129,7 +134,7 @@
 .HomepageSwiperFull{
   .swiper-full-pagination-init{
     @include lg{
-      bottom: 35%;
+      bottom: 240px;
     }
   }
 }

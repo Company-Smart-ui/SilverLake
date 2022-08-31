@@ -450,6 +450,12 @@ input::-webkit-calendar-picker-indicator {
     margin: 0 auto;
   }
 }
+.mw-xl-650{
+  @include xl{
+    max-width: 650px !important;
+    margin: 0 auto;
+  }
+}
 
 .mw-700{
   max-width: 700px !important;
@@ -572,6 +578,11 @@ input::-webkit-calendar-picker-indicator {
 }
 .mt--200{
   margin-top: -200px;
+}
+.mt-lg--200{
+  @include lg{
+    margin-top: -200px;
+  }
 }
 .mt-lg--60{
   @include lg{
