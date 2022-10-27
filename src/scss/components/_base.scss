@@ -576,6 +576,16 @@ input::-webkit-calendar-picker-indicator {
     margin-top: -18% !important;
   }
 }
+.mt-lg--100{
+  @include lg{
+    margin-top: -100px;
+  }
+}
+.mt-xl--100{
+  @include xl{
+    margin-top: -100px;
+  }
+}
 .mt--200{
   margin-top: -200px;
 }
@@ -584,15 +594,36 @@ input::-webkit-calendar-picker-indicator {
     margin-top: -200px;
   }
 }
+.mt-xl--200{
+  @include xl{
+    margin-top: -200px;
+  }
+}
+.mt-lg--400{
+  @include lg{
+    margin-top: -400px;
+  }
+}
+.mt-xxl--200{
+  @include xxl{
+    margin-top: -200px;
+  }
+}
 .mt-lg--60{
   @include lg{
     margin-top: -60px;
   }
 }
+.ml-16vw{
+  margin-left: -16vw;
+}
 .ml-lg--140{
   @include lg{
     margin-left: -140px;
   }
+}
+.mr--5{
+  margin-right: -5px;
 }
 .mr--130{
   margin-right: -130px;
@@ -789,7 +820,10 @@ input::-webkit-calendar-picker-indicator {
   color: $accentColor;
   max-width: 350px !important;
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 16px;
+  @include sm{
+    font-size: 20px;
+  }
   @include lg{
     font-size: 26px;
   }
@@ -834,16 +868,24 @@ input::-webkit-calendar-picker-indicator {
     }
   }
   &::after{
+    position: absolute;
+    content: "";
+    z-index: -1;
+    max-width: 720px;
+    width: 135%;
+    max-height: 310px;
+    height: 60%;
+    background: $secondColor;
+    bottom: -35px;
+    left: -20%;
+    @include sm{
+      left: -15%;
+    }
     @include lg{
-      position: absolute;
-      content: "";
-      z-index: -1;
-      max-width: 720px;
       width: 100%;
-      max-height: 310px;
-      height: 100%;
-      background: $secondColor;
+      left: 0;
       bottom: -70px;
+      height: 100%;
     }
   }
   &-big{

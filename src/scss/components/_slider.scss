@@ -23,6 +23,9 @@
 .HomepageSwiperInit{
   position: relative;
   padding-bottom: 50px;
+  @include xs{
+    height: 450px;
+  }
   @include sm{
     height: 700px;
   }
@@ -36,14 +39,31 @@
     }
   }
   .swiper-slide{
-    max-height: 515px;
+    max-height: 350px;
+    @include sm{
+      max-height: 515px;
+    }
   }
+  .swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+    @include sm{
+      width: 15px;
+      height: 15px;
+    }
+  }
+
   .hp-pagination-init{
     bottom: 10px;
+    @include xs{
+      width: 30%;
+      bottom: 60px;
+    }
     @include sm{
       width: 30%;
-      bottom: 80px;
+      bottom: 140px;
     }
+
     @include xl{
       width: 30%;
       bottom: 130px;
@@ -52,13 +72,13 @@
       background: $accentColor;
     }
   }
-  @include sm{
+  @include xs{
     .swiper-slide-prev{
       position: relative;
       z-index: 1;
       width: 100% !important;
       max-width: 425px;
-      margin-left: 210px;
+      margin-left: 10px;
       img{
         height: 510px;
       }
@@ -66,14 +86,14 @@
     .swiper-slide-active{
       position: relative;
       width: 100% !important;
-      margin-left: -190px;
-      margin-top: 60%;
+      margin-left: -90px;
+      margin-top: 270px;
       overflow: visible;
       max-width: 380px;
-      max-height: 250px;
+      max-height: 170px;
       img{
         max-width: 380px;
-        max-height: 250px;
+        max-height: 150px;
       }
       &:after{
         position: absolute;
@@ -88,11 +108,73 @@
     }
     .swiper-slide-next{
       width: 100% !important;
-      margin-left: -160px;
+      margin-left: -260px;
       max-width: 200px;
       max-height: 135px;
       margin-top: 10%;
       margin-right: 60px !important;
+    }
+  }
+  @include sm{
+    .swiper-slide-prev{
+      margin-left: 20%;
+    }
+    .swiper-slide-active{
+      margin-left: -15%;
+      margin-top: 370px;
+      max-width: 380px;
+      max-height: 250px;
+      img{
+        max-width: 380px;
+        max-height: 250px;
+      }
+    }
+    .swiper-slide-next{
+      margin-left: -180px;
+      img{
+        max-height: 150px;
+      }
+    }
+  }
+  @include md{
+    .swiper-slide-prev{
+      max-width: 530px;
+    }
+    .swiper-slide-next{
+      margin-left: -35%;
+    }
+    .swiper-slide-active{
+      margin-top: 380px;
+      max-width: 380px;
+      max-height: 220px;
+      img{
+        max-width: 340px;
+        max-height: 220px;
+      }
+    }
+  }
+  @include lg{
+    .swiper-slide-prev{
+      max-width: 330px;
+      margin-left: 210px;
+      img{
+        height: 510px;
+      }
+    }
+
+    .swiper-slide-next{
+      margin-left: -230px;
+    }
+  }
+  @include xl{
+    .swiper-slide-prev{
+      max-width: 450px;
+    }
+    .swiper-slide-active{
+      margin-left: -130px;
+      img{
+        max-width: 380px;
+      }
     }
   }
   @include xxl{
@@ -104,7 +186,7 @@
       margin-top: 60%;
     }
     .swiper-slide-next{
-      margin-left: -200px;
+      margin-left: -190px;
     }
   }
 }
@@ -152,6 +234,29 @@
 }
 
 .HomepageSwiperBlocks{
+
+  overflow: visible ;
+  @include xl{
+    overflow: hidden;
+  }
+  .swiper-slide-active{
+    max-width: 70% !important;
+    @include sm{
+      max-width: 80% !important;
+    }
+    @include xl{
+      max-width: none;
+    }
+  }
+  .swiper-slide-prev{
+    margin-left: 15% !important;
+    @include sm{
+      margin-left: 10% !important;
+    }
+    @include xl{
+      margin-left: auto !important;
+    }
+  }
   .swiper-button-next, .swiper-button-prev{
     display: block;
     color: $accentColor;
@@ -180,6 +285,18 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
+    img{
+      height: 100%;
+    }
+    @include md{
+      max-height: 300px;
+    }
+    @include lg{
+      max-height: 350px;
+    }
+    @include xl{
+      max-height: 275px;
+    }
   }
   h3{
     font-weight: 800;
@@ -191,6 +308,12 @@
     display: flex;
     flex-direction: column;
     align-items: baseline;
+    @include sm{
+      padding: 0 15px 10px;
+    }
+    @include xl{
+      padding: 0 0 10px;
+    }
   }
   .link{
     margin-top: auto;

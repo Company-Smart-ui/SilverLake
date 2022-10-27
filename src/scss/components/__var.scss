@@ -9,12 +9,19 @@ $secondFont: #4b4b4e;
 
 $grayColor: #636362;
 $soldColor: $grayColor;
- 
+
+$xs: 375px;
 $sm: 575px;
 $md: 768px;
 $lg: 992px;
 $xl: 1200px;
-$xxl: 1400px; 
+$xxl: 1400px;
+
+@mixin xs {
+  @media (min-width:$xs) {
+    @content
+  }
+};
 @mixin sm {
   @media (min-width:$sm) {
     @content

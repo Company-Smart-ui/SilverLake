@@ -12,7 +12,7 @@ var swiper = new Swiper(".HomepageSwiperInit", {
       clickable: true,
     },
     breakpoints: {
-        575: {
+        375: {
             slidesPerView: 3,
         },
         1200: {
@@ -63,10 +63,10 @@ var swiper = new Swiper(".HomepageSwiperBlocks", {
         prevEl: '.swiper-blocks-prev',
     },
     breakpoints: {
-        420: {
+        375: {
             spaceBetween: 40,
             grabCursor:false,
-            slidesPerView: 2,
+            slidesPerView: 1,
         },
         1200: {
             spaceBetween: 70,
